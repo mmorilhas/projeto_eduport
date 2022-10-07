@@ -1,39 +1,47 @@
-.cartao-tags{
-  display: flex;
-  justify-content: space-between;
-  margin-bottom: 0.5rem;
+i {
+  padding-bottom: 0rem;
+  vertical-align: middle;
 }
 
-.cartao-classificacao{
-  display: flex;
+hr {
+  margin: 0.45rem 0 0.45rem 0;
 }
 
-.cartao-classificacao p{
-  margin-left: 1rem;
-}
-
-.estrelas{
-  font-size: small;
-  display: flex;
+.extra-container{
+  padding-left: 8rem;
+  padding-right: 8rem;
 }
 
 
-.cartao-footer{
-  display: flex;
-  justify-content: space-between;
+.margin-b{
+  margin-bottom: 0.75rem;
 }
 
-.tempo{
-  display: flex;
-  font-size: small
+.margin-top{
+  margin-top: 0.75rem;
 }
 
-i{
-  padding-right: 0.35rem;
+/* 
+cartao 
+*/
+
+
+.cartão-fonte{
+  font-size: 0.65rem;
 }
 
-.aulas{
-  display: flex;
-  font-size: small
+.cor-bg{
+  background-color: rgb(203, 233, 255);
+  
+}
+ 
+/* 
+nav */
+.padding-novo{
+  padding-top: 0.25rem;
+  padding-bottom: 0.25rem;
 }
 
+.nav-fonte{
+  font-size: 0.70rem;
+}
