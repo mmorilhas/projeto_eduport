@@ -1,0 +1,39 @@
+.cartao-tags{
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 0.5rem;
+}
+
+.cartao-classificacao{
+  display: flex;
+}
+
+.cartao-classificacao p{
+  margin-left: 1rem;
+}
+
+.estrelas{
+  font-size: small;
+  display: flex;
+}
+
+
+.cartao-footer{
+  display: flex;
+  justify-content: space-between;
+}
+
+.tempo{
+  display: flex;
+  font-size: small
+}
+
+i{
+  padding-right: 0.35rem;
+}
+
+.aulas{
+  display: flex;
+  font-size: small
+}
+
