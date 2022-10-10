@@ -1,47 +1,75 @@
-i {
-  padding-bottom: 0rem;
-  vertical-align: middle;
+root{
+  --amarelo-escuro: #f7c32e;
+  --amarelo-claro: #fef6e0; 
+  --fonte-escuro: #24292d;
+  --fonte-claro: #9b9b9d;
+  --vermelho-claro: #fbe9eb;
+  --vermelho-escuro: #d6293e;
+  --cinza-claro:#e8ebed;
+  --cinza-escuro:#1d3b53;
+  --roxo-claro:#f0ecf9;
+  --roxo-escuro: #6f42c1;
+  --verde-claro:#e7f6f8;
+  --verde-escuro:#17a2b8;
+  --azul-claro:#e6f0f9;
+  --azul-escuro:#066ac9;
+  --cinza-section: #f4f6f7;
+  --cinza-fundo:#f5f7f9;
+  --laranja-calendario:#fd7e14;
+  --verde-dinheiro:#0cbc87;
 }
 
-hr {
-  margin: 0.45rem 0 0.45rem 0;
+.cor-banner-instrutor{
+  background-color: #17a2b8;;
 }
 
-.extra-container{
-  padding-left: 8rem;
-  padding-right: 8rem;
+.cor-bg-feedbacks{
+  background-color: rgb(230, 230, 230);
 }
 
 
-.margin-b{
-  margin-bottom: 0.75rem;
-}
-
-.margin-top{
-  margin-top: 0.75rem;
-}
-
-/* 
-cartao 
-*/
-
-
-.cartão-fonte{
-  font-size: 0.65rem;
-}
 
 .cor-bg{
   background-color: rgb(203, 233, 255);
   
 }
  
-/* 
-nav */
-.padding-novo{
-  padding-top: 0.25rem;
-  padding-bottom: 0.25rem;
-}
 
 .nav-fonte{
-  font-size: 0.70rem;
+  font-size: 0.75rem;
+}
+
+#perfil{
+  background-image: url('../img/portrait-1.jpg');
+  background-size: cover;
+  border-radius: 50%;
+  width: 35px;
+  height: 35px;
+}
+
+#avatar{
+  height: 45px;
+  width: 45px;
+  background-image: url('../img/portrait-1.jpg');
+  background-size: cover;
+  background-position: center;
+  border-radius: 8%;
+}
+
+
+#avatar-card-wrapper{
+  width: 80px;
+  height: 80px; 
+  overflow: hidden; 
+  border-radius: 50%;
+}
+
+#avatar-card-wrapper img{
+  width: 100%;
+  height: auto;
+}
+
+#flip-icon{ 
+  display: inline-block;
+  transform: rotate(180deg);
 }
