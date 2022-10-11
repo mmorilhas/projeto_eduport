@@ -19,6 +19,9 @@ root{
   -verde-dinheiro:#0cbc87;
 }
 
+.placas i{
+  font-size: 3.5rem;
+}
 .cor-banner-instrutor{
   background-color: #17a2b8;
 }
