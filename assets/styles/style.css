@@ -16,7 +16,7 @@ root{
   --cinza-section: #f4f6f7;
   --cinza-fundo:#f5f7f9;
   --laranja-calendario:#fd7e14;
-  --verde-dinheiro:#0cbc87;
+  -verde-dinheiro:#0cbc87;
 }
 
 .cor-banner-instrutor{
@@ -27,9 +27,20 @@ root{
   background-color: rgb(230, 230, 230);
 }
 
-.cor-item-laranja{
+.badge-azul{
+  background-color:#e6f0f9 ;
+  color: #066ac9;
+}
+
+.badge-preto{
+  background-color: #24292d;
+  color: #e8ebed;
+}
+
+.f-laranja{
   color: #fd7e14;
 }
+
 
 
 .cor-bg{
