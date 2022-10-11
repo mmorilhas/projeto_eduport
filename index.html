@@ -15,20 +15,20 @@
  <body>
 		<header>
 			<nav class="navbar navbar-expand-lg">
-				<div class="container-fluid col d-flex justify-content-start">
-					<div class="row gx-5">
-						<div class="col-auto">
-							<a class="navbar-brand me-1" href="#">
-								<img src="./assets/img/logo.png" alt="logo Eduport">
-							</a>
-							<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-								<span class="navbar-toggler-icon"></span>
-							</button>
-							<button type="button" class="nav-fonte px-1 text-primary small btn btn-info"><i class="pe-1 text-primary small bi bi-grid-fill"></i>Category</button>
-						</div>
-						<div class="col-auto">
-							<div class="collapse navbar-collapse" id="navbarNav">
-								<ul class="navbar-nav navbar-nav-scroll">
+				<div class="container-fluid">
+					<a class="navbar-brand me-1" href="#">
+						<img src="./assets/img/logo.png" alt="logo Eduport">
+					</a>
+					<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+						<span class="navbar-toggler-icon"></span>
+					</button>
+					<div class="collapse navbar-collapse" id="navbarNav">
+						<div class="row ps-2">
+							<div class="col-auto ps-0">
+								<ul class="navbar-nav navbar-nav-scroll d-flex">
+									<li class="nav-item-dropdown align-self-center pt-1 me-5 pe-5">
+										<button type="button" class="nav-fonte px-1 text-primary small btn btn-info"><i class="pe-1 text-primary small bi bi-grid-fill"></i>Category</button>
+									</li>
 									<li class="nav-item dropdown ">
 										<a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
         							Demo
@@ -79,36 +79,32 @@
 											<li><a class="dropdown-item" href="#">Something else here</a></li>
 										</ul>
       						</li>
+									<li class="nav-item-dropdow">
+										<form class="d-flex" role="search">
+											<div class="input-group">
+												<input class="form-control border-end-0 border pe-0" type="search" placeholder="Search" >
+												<span class="input-group-text bg-white border border-start-0 p-0">
+													<button class="ps-0 btn bg-white border-0 border " type="button">
+														<i class="bi bi-search"></i>
+													</button>
+												</span>
+											</div>
+										</form>
+									</li>
       					</ul>
 							</div>
 						</div>	
-						<div class="col-auto">
-							<div class="row">
-								<div class="col-auto pe-0">
-									<form class="d-flex" role="search">
-										<div class="input-group">
-											<input class="form-control border-end-0 border pe-0" type="search" placeholder="Search" >
-											<span class="input-group-text bg-white border border-start-0 p-0">
-												<button class="ps-0 btn bg-white border-0 border " type="button">
-													<i class="bi bi-search"></i>
-												</button>
-											</span>
-										</div>
-									</form>
-								</div>
-								<div class="col-auto pe-0">
-                  <div class="nav-item dropdown">
-                    <a class="nav-link" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                      <div id="perfil"></div>	
-                    </a>
-                    <ul class="dropdown-menu border-0">
-                      <li><a class="dropdown-item" href="#">Action</a></li>
-                      <li><a class="dropdown-item" href="#">Another action</a></li>
-                      <li><a class="dropdown-item" href="#">Something else here</a></li>
-                    </ul>
-                  </div>
-								</div>
-							</div>
+					</div>
+					<div class="col-auto align-self-center">
+						<div class="nav-item dropdown">
+							<a class="nav-link" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+								 <div id="perfil"></div>	
+							</a>
+							<ul class="dropdown-menu border-0">
+								<li><a class="dropdown-item" href="#">Action</a></li>
+								<li><a class="dropdown-item" href="#">Another action</a></li>
+								<li><a class="dropdown-item" href="#">Something else here</a></li>
+							</ul>
 						</div>
 					</div>
 				</div>
