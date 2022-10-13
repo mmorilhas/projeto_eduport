@@ -1,6 +1,7 @@
 root{
   --amarelo-escuro: #f7c32e;
-  --amarelo-claro: #fef6e0; 
+  --amarelo-claro: #fef6e0 ; 
+
   --fonte-escuro: #24292d;
   --fonte-claro: #9b9b9d;
   --vermelho-claro: #fbe9eb;
@@ -9,14 +10,27 @@ root{
   --cinza-escuro:#1d3b53;
   --roxo-claro:#f0ecf9;
   --roxo-escuro: #6f42c1;
-  --verde-claro:#e7f6f8;
+  --verde-claro:#e6f8f3;
   --verde-escuro:#17a2b8;
   --azul-claro:#e6f0f9;
   --azul-escuro:#066ac9;
   --cinza-section: #f4f6f7;
   --cinza-fundo:#f5f7f9;
   --laranja-calendario:#fd7e14;
-  -verde-dinheiro:#0cbc87;
+  -verde-dinheiro:#0ebc88;
+}
+
+body{
+  color: #24292d;
+  
+}
+
+.text-muted{
+  color: #9b9b9d!important;
+}
+
+.f-claro{
+  color: #e8ebed;
 }
 
 .placas i{
@@ -28,6 +42,16 @@ root{
 
 .cor-bg-feedbacks{
   background-color: rgb(230, 230, 230);
+}
+
+.badge-roxo{
+  background-color: #f0ecf9;
+  color: #6f42c1;
+}
+
+.badge-verde{
+  background-color: #e6f8f3 ;
+  color: #0ebc88;
 }
 
 .badge-azul{
@@ -44,7 +68,37 @@ root{
   color: #fd7e14;
 }
 
+.f-vermelho{
+  color: #d6293e;
+}
 
+.f-verde{
+  color: #0ebc88;
+}
+
+.f-escuro{
+  color: #24292d;;
+}
+
+.placas__1{
+  background-color: #fef6e0;
+  color: #f7c32e;
+}
+
+.placas__2{
+  background-color: #e8ebed;
+  color: #1d3b53;
+}
+
+.placas__3{
+  background-color: #f0ecf9;
+  color: #6f42c1;
+}
+
+.placas__4{
+  color: #17a2b8;
+  background-color: #e7f6f8;
+}
 
 .cor-bg{
   background-color: rgb(203, 233, 255);
@@ -67,12 +121,10 @@ root{
 #avatar{
   height: 45px;
   width: 45px;
-  background-image: url('../img/portrait-1.jpg');
   background-size: cover;
   background-position: center;
   border-radius: 8%;
 }
-
 
 #avatar-card-wrapper{
   width: 80px;
