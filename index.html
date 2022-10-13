@@ -22,13 +22,11 @@
 					<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
 						<span class="navbar-toggler-icon"></span>
 					</button>
-					<div class="collapse navbar-collapse" id="navbarNav">
-						<div class="row ps-2">
-							<div class="col-auto ps-0">
+					<div class="collapse navbar-collapse justify-content-between" id="navbarNav">
+						<button type="button" class="nav-fonte px-1 text-primary small btn btn-info"><i class="pe-1 text-primary small bi bi-grid-fill"></i>Category</button>
+						<div class="row ps-2 d-flex">
+							<div class="col-auto">
 								<ul class="navbar-nav navbar-nav-scroll d-flex">
-									<li class="nav-item-dropdown align-self-center pt-1 me-5 pe-5">
-										<button type="button" class="nav-fonte px-1 text-primary small btn btn-info"><i class="pe-1 text-primary small bi bi-grid-fill"></i>Category</button>
-									</li>
 									<li class="nav-item dropdown ">
 										<a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
         							Demo
@@ -79,38 +77,34 @@
 											<li><a class="dropdown-item" href="#">Something else here</a></li>
 										</ul>
       						</li>
-									<li class="nav-item-dropdow d-flex justify-content-end">
-										<form class="d-flex" role="search">
-											<div class="input-group">
-												<input class="form-control border-end-0 border pe-0" type="search" placeholder="Search" >
-												<span class="input-group-text bg-white border border-start-0 p-0">
-													<button class="ps-0 btn bg-white border-0 border " type="button">
-														<i class="bi bi-search"></i>
-													</button>
-												</span>
-											</div>
-										</form>
-									</li>
       					</ul>
 							</div>
-						</div>	
-					</div>
-					<div class="col-auto align-self-center">
-						<div class="nav-item dropdown">
-							<a class="nav-link" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-								 <div id="perfil"></div>	
-							</a>
-							<ul class="dropdown-menu border-0">
-								<li><a class="dropdown-item" href="#">Action</a></li>
-								<li><a class="dropdown-item" href="#">Another action</a></li>
-								<li><a class="dropdown-item" href="#">Something else here</a></li>
-							</ul>
 						</div>
+						<form class="d-flex" role="search">
+							<div class="input-group">
+								<input class="form-control border-end-0 border pe-0" type="search" placeholder="Search" >
+								<span class="input-group-text bg-white border border-start-0 p-0">
+									<button class="ps-0 btn bg-white border-0 border " type="button">
+										<i class="bi bi-search"></i>
+									</button>
+								</span>
+							</div>
+						</form>	
+					</div>
+					<div class="ps-4 nav-item dropdown">
+						<a class="nav-link" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+						  <div id="perfil"></div>	
+						</a>
+						<ul class="dropdown-menu border-0">
+							<li><a class="dropdown-item" href="#">Action</a></li>
+							<li><a class="dropdown-item" href="#">Another action</a></li>
+							<li><a class="dropdown-item" href="#">Something else here</a></li>
+						</ul>
 					</div>
 				</div>
 			</nav>
 		</header>
-    <main class="">
+    <main>
       <section class="topo">
         <div class="container col-xxl-8 px-4 py-5">
          <div class="row flex-lg-row-reverse align-items-center g-5 py-5">
@@ -226,7 +220,6 @@
         </div>
       </section>
 
-        <!--https://bootstrapious.com/p/bootstrap-cards-->
       <section class="populares container">
         <h1 class="text-center"><strong>Most Popular Courses</strong></h1>
         <p class="text-center text-muted">
@@ -972,171 +965,170 @@
 					</div>
 				</div>
       </section>
-
-			<footer>
-				<div class="container">
-					<div class="row pt-4 gy-4 mb-4">
-						<div class="col-md-3 ">
-							<img src="./assets/img/logo.png" alt="" style="width:8rem;" class="pt-2 mb-2">
-							<p class="text-muted small pt-2">
-								Eduport education ficitur euismod mi vel consectetur. Mauris et luctus lorem quam libero lorem.
-							</p>
-							<div class="row gx-2">
-								<div class="col-auto">
-									<a href="#"><img class="icones-redes rounded" src="./assets/img/facebook-logo.png" alt=""></a>
-								</div>
-								<div class="col-auto">
-									<a href="#"><img class="icones-redes rounded" src="./assets/img/instagram-logo.png" alt=""></a>
-								</div>
-								<div class="col-auto">
-									<a href="#"><img class="icones-redes rounded" src="./assets/img/twitter-logo.png" alt=""></a>
-								</div>
-								<div class="col-auto">
-									<a href="#"><img class="icones-redes rounded" src="./assets/img/linkedin-logo.png" alt=""></a>
-								</div>
-								
+    </main>
+		<footer>
+			<div class="container">
+				<div class="row pt-4 gy-4 mb-4">
+					<div class="col-md-3 ">
+						<img src="./assets/img/logo.png" alt="" style="width:8rem;" class="pt-2 mb-2">
+						<p class="text-muted small pt-2">
+							Eduport education ficitur euismod mi vel consectetur. Mauris et luctus lorem quam libero lorem.
+						</p>
+						<div class="row gx-2">
+							<div class="col-auto">
+								<a href="#"><img class="icones-redes rounded" src="./assets/img/facebook-logo.png" alt=""></a>
 							</div>
-						</div>
-						<div class="col-auto">
-							<ul class="list-group">
-								<li class="list-group-item border-0 pb-0">
-									<p class="fw-bold">Company</p>
-								</li>
-								<li class="list-group-item border-0  pb-0">
-									<a href="#" class="text-muted text-decoration-none">
-										About us
-									</a>
-								</li>
-								<li class="list-group-item border-0 pb-0">
-									<a href="#" class="text-muted text-decoration-none">
-										Contact us
-									</a>
-								</li>
-								<li  class="list-group-item border-0  pb-0">
-									<a href="#" class="text-muted text-decoration-none">
-										News and Blogs
-									</a>
-								</li>
-								<li class="list-group-item border-0  pb-0">
-									<a href="#" class="text-muted text-decoration-none">
-										Library
-									</a>
-								</li>
-								<li class="list-group-item border-0  pb-0">
-									<a href="#" class="text-muted text-decoration-none">
-										Career
-									</a>
-								</li>
-							</ul>
-							
-						</div>
-						<div class="col-auto">
-							<ul class="list-group">
-								<li class="list-group-item border-0 pb-0">
-									<p class="fw-bold">Community</p>
-								</li>
-								<li class="list-group-item border-0  pb-0">
-									<a href="#" class="text-muted text-decoration-none">
-										Documentation
-									</a>
-								</li>
-								<li class="list-group-item border-0 pb-0">
-									<a href="#" class="text-muted text-decoration-none">
-										Faq
-									</a>
-								</li>
-								<li  class="list-group-item border-0  pb-0">
-									<a href="#" class="text-muted text-decoration-none">
-										Forum
-									</a>
-								</li>
-								<li class="list-group-item border-0  pb-0">
-									<a href="#" class="text-muted text-decoration-none">
-										Sitemap
-									</a>
-								</li>
-							</ul>
-							
-						</div>
-						<div class="col-auto">
-							<ul class="list-group">
-								<li class="list-group-item border-0 pb-0">
-									<p class="fw-bold">Teaching</p>
-								</li>
-								<li class="list-group-item border-0  pb-0">
-									<a href="#" class="text-muted text-decoration-none">
-										Become a teacher
-									</a>
-								</li>
-								<li class="list-group-item border-0 pb-0">
-									<a href="#" class="text-muted text-decoration-none">
-										How to guide
-									</a>
-								</li>
-								<li  class="list-group-item border-0  pb-0">
-									<a href="#" class="text-muted text-decoration-none">
-										Terms & Conditions
-									</a>
-								</li>
-							</ul>
-							
-						</div>
-						<div class="col-auto">
-							<ul class="list-group">
-								<li class="list-group-item border-0 pb-0">
-									<p class="fw-bold">Contact</p>
-								</li>
-								<li class="list-group-item border-0  pb-0">
-									<address class="text-muted small">
-										Toll free: <span class="text-black"> +1234 567 890 </span><br>
-										(9:AM to 8:PM IST)
-									</address>
-									<address class="text-muted small" >
-										Email: <span class="text-black"> example@gmail.com </span>
-									</address>
-								</li>
-							</ul>
-							<div class="row ps-3">
-								<div class="col-auto pe-0">
-									<a href="#"><img src="./assets/img/google.png" alt="" class="app-store"></a>
-								</div>
-								<div class="col-auto ps-1">
-									<a href="#"><img src="./assets/img/apple.png" alt="" class="app-store"></a>
-								</div>
+							<div class="col-auto">
+								<a href="#"><img class="icones-redes rounded" src="./assets/img/instagram-logo.png" alt=""></a>
+							</div>
+							<div class="col-auto">
+								<a href="#"><img class="icones-redes rounded" src="./assets/img/twitter-logo.png" alt=""></a>
+							</div>
+							<div class="col-auto">
+								<a href="#"><img class="icones-redes rounded" src="./assets/img/linkedin-logo.png" alt=""></a>
 							</div>
 							
+						</div>
+					</div>
+					<div class="col-auto">
+						<ul class="list-group">
+							<li class="list-group-item border-0 pb-0">
+								<p class="fw-bold">Company</p>
+							</li>
+							<li class="list-group-item border-0  pb-0">
+								<a href="#" class="text-muted text-decoration-none">
+									About us
+								</a>
+							</li>
+							<li class="list-group-item border-0 pb-0">
+								<a href="#" class="text-muted text-decoration-none">
+									Contact us
+								</a>
+							</li>
+							<li  class="list-group-item border-0  pb-0">
+								<a href="#" class="text-muted text-decoration-none">
+									News and Blogs
+								</a>
+							</li>
+							<li class="list-group-item border-0  pb-0">
+								<a href="#" class="text-muted text-decoration-none">
+									Library
+								</a>
+							</li>
+							<li class="list-group-item border-0  pb-0">
+								<a href="#" class="text-muted text-decoration-none">
+									Career
+								</a>
+							</li>
+						</ul>
+						
+					</div>
+					<div class="col-auto">
+						<ul class="list-group">
+							<li class="list-group-item border-0 pb-0">
+								<p class="fw-bold">Community</p>
+							</li>
+							<li class="list-group-item border-0  pb-0">
+								<a href="#" class="text-muted text-decoration-none">
+									Documentation
+								</a>
+							</li>
+							<li class="list-group-item border-0 pb-0">
+								<a href="#" class="text-muted text-decoration-none">
+									Faq
+								</a>
+							</li>
+							<li  class="list-group-item border-0  pb-0">
+								<a href="#" class="text-muted text-decoration-none">
+									Forum
+								</a>
+							</li>
+							<li class="list-group-item border-0  pb-0">
+								<a href="#" class="text-muted text-decoration-none">
+									Sitemap
+								</a>
+							</li>
+						</ul>
+						
+					</div>
+					<div class="col-auto">
+						<ul class="list-group">
+							<li class="list-group-item border-0 pb-0">
+								<p class="fw-bold">Teaching</p>
+							</li>
+							<li class="list-group-item border-0  pb-0">
+								<a href="#" class="text-muted text-decoration-none">
+									Become a teacher
+								</a>
+							</li>
+							<li class="list-group-item border-0 pb-0">
+								<a href="#" class="text-muted text-decoration-none">
+									How to guide
+								</a>
+							</li>
+							<li  class="list-group-item border-0  pb-0">
+								<a href="#" class="text-muted text-decoration-none">
+									Terms & Conditions
+								</a>
+							</li>
+						</ul>
+						
+					</div>
+					<div class="col-auto">
+						<ul class="list-group">
+							<li class="list-group-item border-0 pb-0">
+								<p class="fw-bold">Contact</p>
+							</li>
+							<li class="list-group-item border-0  pb-0">
+								<address class="text-muted small">
+									Toll free: <span class="text-black"> +1234 567 890 </span><br>
+									(9:AM to 8:PM IST)
+								</address>
+								<address class="text-muted small" >
+									Email: <span class="text-black"> example@gmail.com </span>
+								</address>
+							</li>
+						</ul>
+						<div class="row ps-3">
+							<div class="col-auto pe-0">
+								<a href="#"><img src="./assets/img/google.png" alt="" class="app-store"></a>
+							</div>
+							<div class="col-auto ps-1">
+								<a href="#"><img src="./assets/img/apple.png" alt="" class="app-store"></a>
+							</div>
 						</div>
 						
-						<hr>
-						<div class="container">
-							<div class="row d-flex align-items-center py-3 px-0 justify-content-between">
-								<div class="col-lg-8 me-auto">
-									<p class="small text-muted mb-0">
-										Copyrights @2022 Eduport. All rights reserved
-									</p>
+					</div>
+					
+					<hr>
+					<div class="container">
+						<div class="row d-flex align-items-center py-3 px-0 justify-content-between">
+							<div class="col-lg-8 me-auto">
+								<p class="small text-muted mb-0">
+									Copyrights @2022 Eduport. All rights reserved
+								</p>
+							</div>
+							<div class="col-auto">
+								<div class="btn-group dropup">
+									<button type="button" class="text-muted btn btn-sm dropdown-toggle py-0" data-bs-toggle="dropdown" aria-expanded="false"><i class="small bi bi-globe2"></i> Language </button>
+									<ul class="dropdown-menu">
+										<li class="dropup-item">
+										la la ala
+										</li>
+									</ul>
 								</div>
-								<div class="col-auto">
-									<div class="btn-group dropup">
-										<button type="button" class="text-muted btn btn-sm dropdown-toggle py-0" data-bs-toggle="dropdown" aria-expanded="false"><i class="small bi bi-globe2"></i> Language </button>
-										<ul class="dropdown-menu">
-											<li class="dropup-item">
-											la la ala
-											</li>
-										</ul>
-									</div>
-								</div>
-								<div class="col-auto">
-									<p class="small text-muted mb-0">Terms of use</p>
-								</div>
-								<div class="col-auto">
-									<p class="small text-muted mb-0">Privacy policy</p>
-								</div>
+							</div>
+							<div class="col-auto">
+								<p class="small text-muted mb-0">Terms of use</p>
+							</div>
+							<div class="col-auto">
+								<p class="small text-muted mb-0">Privacy policy</p>
 							</div>
 						</div>
 					</div>
 				</div>
-			</footer>
-    </main>
+			</div>
+		</footer>
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"
