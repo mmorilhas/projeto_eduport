@@ -23,13 +23,20 @@
 						<span class="navbar-toggler-icon"></span>
 					</button>
 					<div class="collapse navbar-collapse justify-content-between" id="navbarNav">
-						<button type="button" class="nav-fonte px-1 text-primary small btn btn-info"><i class="pe-1 text-primary small bi bi-grid-fill"></i>Category</button>
+						<div class="dropdown dropend">
+							<button type="button" class="btn btn-secondary px-2 "  data-bs-toggle="dropdown" aria-expanded="false"><i class="pe-1 small bi bi-grid-fill"></i>Category</button>
+							<ul class="dropdown-menu">
+								<li><a class="dropdown-item" href="#">Action</a></li>
+								<li><a class="dropdown-item" href="#">Another action</a></li>
+								<li><a class="dropdown-item" href="#">Something else here</a></li>
+							</ul>
+						</div>
 						<div class="row ps-2 d-flex">
 							<div class="col-auto">
-								<ul class="navbar-nav navbar-nav-scroll d-flex">
+								<ul class="navbar-nav navbar-nav-scroll d-flex fw-semibold">
 									<li class="nav-item dropdown ">
-										<a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-        							Demo
+										<a class="nav-link" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+        							Demos <i class="small bi bi-chevron-down"></i>
        							</a>
        							<ul class="dropdown-menu border-0">
 											<li><a class="dropdown-item" href="#">Action</a></li>
@@ -38,8 +45,8 @@
 										</ul>
       						</li>
 									<li class="nav-item dropdown">
-										<a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-        							Pages
+										<a class="nav-link" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+        							Pages <i class="small bi bi-chevron-down"></i>
        							</a>
        							<ul class="dropdown-menu border-0">
 											<li><a class="dropdown-item" href="#">Action</a></li>
@@ -48,8 +55,8 @@
        							</ul>
       						</li>
 									<li class="nav-item dropdown">
-										<a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-											Accounts
+										<a class="nav-link" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+											Accounts <i class="small bi bi-chevron-down"></i>
        							</a>
        							<ul class="dropdown-menu border-0">
 											<li><a class="dropdown-item" href="#">Action</a></li>
@@ -58,8 +65,8 @@
        							</ul>
       						</li>
 									<li class="nav-item dropdown">
-										<a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-											Megamenu
+										<a class="nav-link" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+											Megamenu <i class="small bi bi-chevron-down"></i>
 										</a>
 										<ul class="dropdown-menu border-0">
 											<li><a class="dropdown-item" href="#">Action</a></li>
@@ -67,7 +74,7 @@
 											<li><a class="dropdown-item" href="#">Something else here</a></li>
 										</ul>
       						</li>
-									<li class="nav-item dropdown me-auto">
+									<li class="nav-item dropdown">
 										<a class="nav-link " href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
 											<i class="bi bi-three-dots"></i>
 										</a>
@@ -91,11 +98,11 @@
 							</div>
 						</form>	
 					</div>
-					<div class="ps-4 nav-item dropdown">
+					<div class="ps-4 dropdown dropstart">
 						<a class="nav-link" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
 						  <div id="perfil"></div>	
 						</a>
-						<ul class="dropdown-menu border-0">
+						<ul class="dropdown-menu">
 							<li><a class="dropdown-item" href="#">Action</a></li>
 							<li><a class="dropdown-item" href="#">Another action</a></li>
 							<li><a class="dropdown-item" href="#">Something else here</a></li>
@@ -108,9 +115,37 @@
       <section class="topo">
         <div class="container col-xxl-8 px-4 py-5">
          <div class="row flex-lg-row-reverse align-items-center g-5 py-5">
-            <div class="col-10 col-sm-8 col-lg-6">
+            <div class="col-10 col-sm-8 col-lg-6 mx-sm-auto mx-md-auto position-relative">
             	<img src="./assets/img/principal.png" class="d-block mx-lg-auto img-fluid" alt="Bootstrap Themes" width="700"
               height="500" loading="lazy" />
+							
+							<div class="card card-daily ms-auto rounded-4 text-center shadow-sm border-0">
+								<div class="card-body">
+									<p class="small mb-3">Our daily new students</p>
+									<div class="daily-students-wrapper" >
+										<img src="./assets/img/portrait-1.jpg" alt="" class="daily-students">
+										<img src="./assets/img/portrait-2.jpg" alt="" class="daily-students">
+										<img src="./assets/img/portrait-3.jpg" alt="" class="daily-students">
+										<img src="./assets/img/portrait-4.jpg" alt="" class="daily-students">
+										<img src="./assets/img/portrait-5.jpg" alt="" class="daily-students">
+									</div>
+								</div>
+							</div>
+
+							<div class="card card-messages justify-content-center">
+								<div class="row justify-content-center">
+									<div class="col-auto d-flex justify-content-end align-items-center">
+										<i class="fs-1 text-warning bi bi-envelope-open-fill"></i>
+									</div>
+									<div class="col-auto ps-0">
+										<div class="card-body px-0 ">
+											<p class="card-text fw-bold mb-0">Congratulations <i class="bi bi-check-circle-fill f-verde ms-4"></i></p>
+											<p class="card-text small mb-0">Your admission completed</p>
+										</div>
+									</div>
+								</div>
+							</div>
+							
             </div>
           	<div class="col-lg-6">
 							<h1 class="display-5 fw-bold lh-1 mb-3">
@@ -121,33 +156,23 @@
 								students. Taught by experts to help you acquire new skills.
 							</p>
 							<ul class="list-inline">
-								<li class="list-inline-item me-0">
-									<i class="bi bi-patch-check-fill"></i>
+								<li class="list-inline-item">
+									<p class="text-muted"><i class="text-black bi bi-patch-check-fill"></i> Learn with experts</p>
 								</li>
 								<li class="list-inline-item">
-									<p class="text-muted">Learn with experts</p>
-								</li>
-								<li class="list-inline-item me-0">
-									<i class="bi bi-patch-check-fill"></i>
+									<p class="text-muted"><i class="text-black bi bi-patch-check-fill"></i> Get Certificate</p>
 								</li>
 								<li class="list-inline-item">
-									<p class="text-muted">Learn with experts</p>
-								</li>
-								<li class="list-inline-item me-0">
-									<i class="bi bi-patch-check-fill"></i>
-								</li>
-								<li class="list-inline-item">
-									<p class="text-muted">Learn with experts</p>
+									<p class="text-muted"><i class="text-black bi bi-patch-check-fill"></i> Learn with experts</p>
 								</li>
 							</ul>
 							<div class="d-grid gap-2 d-md-flex justify-content-md-start">
-								<button type="button" class="btn btn-danger btn-lg px-4 me-md-2">
+								<button type="button" class="btn btn-danger  px-4  me-md-2">
 									Get Started
 								</button>
-								<a href="#"><i class=" fs-1 bi bi-play-circle-fill"></i></a>
-								<p class="fw-bold mb-0 align-self-center text-muted">
-									Watch Video
-								</p>
+								<button type="button" class="btn btn-sm px-4 me-md-2 text-muted fw-bold align-middle">
+									<i class="botao-play align-middle fs-1 bi bi-play-circle-fill pe-1"></i><p class="d-inline align-middle"> Watch Video</p>
+								</button>
 							</div>
           	</div>
           </div>
@@ -226,21 +251,21 @@
           Choose from hundreds of courses from specialist organizations
         </p>
         <div class="container cor-bg rounded py-2">
-          <ul class="nav nav-pills justify-content-center nav-fonte">
+          <ul class="nav nav-pills justify-content-center">
             <li class="nav-item mx-2">
-            <a class="nav-link active" aria-current="page" href="#">Web Design</a>
+            	<a class="nav-link active" aria-current="page" href="#">Web Design</a>
             </li>
             <li class="nav-item mx-2">
-            <a class="nav-link" href="#">Development</a>
+           	  <a class="nav-link" href="#">Development</a>
             </li>
             <li class="nav-item mx-2">
               <a class="nav-link" href="#">Graphic Design</a>
             </li>
             <li class="nav-item mx-2">
-            <a class="nav-link" href="#">Marketing</a>
+            	<a class="nav-link" href="#">Marketing</a>
             </li>
             <li class="nav-item mx-2">
-            <a class="nav-link" href="#">Finance</a>
+            	<a class="nav-link" href="#">Finance</a>
             </li>
           </ul>
         </div>
@@ -251,7 +276,7 @@
 							<div class="card-body p-2">
 								<div class="row">
 									<div class="col-auto me-auto">
-										<button type="button" class="btn badge-roxo px-1" style="--bs-btn-padding-y: 0.1rem; --bs-btn-font-size: 0.50rem;">
+										<button type="button" class="btn badge-roxo" style=" --bs-btn-padding-y: 0.1rem;--bs-btn-padding-x: 0.4rem;--bs-btn-font-size: 0.75rem;">
 											All level
 										</button>
 									</div>
@@ -280,17 +305,11 @@
 							</div>
 							<div class="card-footer bg-white pb-0 px-2">
 								<div class="row pb-2 small">
-									<div class="col-auto pe-1 d-flex align-self-center">
-										<i class="bi bi-clock text-danger fw-bold"></i>
+									<div class="col-auto">
+										<p class="mb-0 "><i class="bi bi-clock text-danger fw-bold"></i> 12h 56m</p>
 									</div>
-									<div class="col-auto ps-0 me-auto">
-										<p class="mb-0 ">12h 56m</p>
-									</div>
-									<div class="col-auto pe-1 d-flex align-self-center">
-										<i class="bi bi-table f-laranja"></i>
-									</div>
-									<div class="col-auto ps-0">
-										<p class="mb-0">15 lectures</p>
+									<div class="col-auto ms-lg-auto">
+										<p class="mb-0"><i class="bi bi-table f-laranja"></i> 15 lectures</p>
 									</div>
 								</div>
 							</div> 
@@ -302,7 +321,7 @@
 							<div class="card-body p-2">
 								<div class="row">
 									<div class="col-auto me-auto">
-										<button type="button" class="btn badge-verde px-1" style="--bs-btn-padding-y: 0.1rem; --bs-btn-font-size: 0.50rem;">
+										<button type="button" class="btn badge-verde" style=" --bs-btn-padding-y: 0.1rem;--bs-btn-padding-x: 0.4rem;--bs-btn-font-size: 0.75rem;">
 											Begginer
 										</button>
 									</div>
@@ -331,17 +350,11 @@
 							</div>
 							<div class="card-footer bg-white pb-0 px-2">
 								<div class="row pb-2 small">
-									<div class="col-auto pe-1 d-flex align-self-center">
-										<i class="bi bi-clock text-danger fw-bold"></i>
+									<div class="col-auto">
+										<p class="mb-0 "><i class="bi bi-clock text-danger fw-bold"></i> 9h 56m</p>
 									</div>
-									<div class="col-auto ps-0 me-auto">
-										<p class="mb-0 ">12h 56m</p>
-									</div>
-									<div class="col-auto pe-1 d-flex align-self-center">
-										<i class="bi bi-table f-laranja"></i>
-									</div>
-									<div class="col-auto ps-0">
-										<p class="mb-0">15 lectures</p>
+									<div class="col-auto ms-lg-auto">
+										<p class="mb-0"><i class="bi bi-table f-laranja"></i> 65 lectures</p>
 									</div>
 								</div>
 							</div> 
@@ -353,7 +366,7 @@
 							<div class="card-body p-2">
 								<div class="row">
 									<div class="col-auto me-auto">
-										<button type="button" class="btn badge-verde px-1" style="--bs-btn-padding-y: 0.1rem; --bs-btn-font-size: 0.50rem;">
+										<button type="button" class="btn badge-verde" style=" --bs-btn-padding-y: 0.1rem;--bs-btn-padding-x: 0.4rem;--bs-btn-font-size: 0.75rem;">
 											Begginer
 										</button>
 									</div>
@@ -382,17 +395,11 @@
 							</div> 
 							<div class="card-footer bg-white pb-0 px-2">
 								<div class="row pb-2 small">
-									<div class="col-auto pe-1 d-flex align-self-center">
-										<i class="bi bi-clock text-danger fw-bold"></i>
+									<div class="col-auto">
+										<p class="mb-0 "><i class="bi bi-clock text-danger fw-bold"></i> 5h 56m</p>
 									</div>
-									<div class="col-auto ps-0 me-auto">
-										<p class="mb-0 ">12h 56m</p>
-									</div>
-									<div class="col-auto pe-1 d-flex align-self-center">
-										<i class="bi bi-table f-laranja"></i>
-									</div>
-									<div class="col-auto ps-0">
-										<p class="mb-0">15 lectures</p>
+									<div class="col-auto ms-lg-auto">
+										<p class="mb-0"><i class="bi bi-table f-laranja"></i> 32 lectures</p>
 									</div>
 								</div>
 							</div> 
@@ -404,7 +411,7 @@
 							<div class="card-body p-2">
 								<div class="row">
 									<div class="col-auto me-auto">
-										<button type="button" class="btn badge-verde px-1" style="--bs-btn-padding-y: 0.1rem; --bs-btn-font-size: 0.75rem;">
+										<button type="button" class="btn badge-verde" style=" --bs-btn-padding-y: 0.1rem;--bs-btn-padding-x: 0.4rem;--bs-btn-font-size: 0.75rem;">
 											Begginer
 										</button>
 									</div>
@@ -433,17 +440,11 @@
 							</div> 
 							<div class="card-footer bg-white pb-0 px-2">
 								<div class="row pb-2 small">
-									<div class="col-auto pe-1 d-flex align-self-center">
-										<i class="bi bi-clock text-danger fw-bold"></i>
+									<div class="col-auto">
+										<p class="mb-0 "><i class="bi bi-clock text-danger fw-bold"></i> 18h 56m</p>
 									</div>
-									<div class="col-auto ps-0 me-auto">
-										<p class="mb-0 ">12h 56m</p>
-									</div>
-									<div class="col-auto pe-1 d-flex align-self-center">
-										<i class="bi bi-table f-laranja"></i>
-									</div>
-									<div class="col-auto ps-0">
-										<p class="mb-0">15 lectures</p>
+									<div class="col-auto ms-lg-auto">
+										<p class="mb-0"><i class="bi bi-table f-laranja"></i> 99 lectures</p>
 									</div>
 								</div>
 							</div> 
@@ -455,7 +456,7 @@
 							<div class="card-body p-2">
 								<div class="row">
 									<div class="col-auto me-auto">
-										<button type="button" class="btn badge-roxo px-1" style="--bs-btn-padding-y: 0.1rem; --bs-btn-font-size: 0.75rem;">
+										<button type="button" class="btn badge-roxo" style=" --bs-btn-padding-y: 0.1rem;--bs-btn-padding-x: 0.4rem;--bs-btn-font-size: 0.75rem;">
 											All level
 										</button>
 									</div>
@@ -484,19 +485,14 @@
 							</div> 
 							<div class="card-footer bg-white pb-0 px-2">
 								<div class="row pb-2 small">
-									<div class="col-auto pe-1 d-flex align-self-center">
-										<i class="bi bi-clock text-danger fw-bold"></i>
+									<div class="col-auto">
+										<p class="mb-0 "><i class="bi bi-clock text-danger fw-bold"></i> 15h 30m</p>
 									</div>
-									<div class="col-auto ps-0 me-auto">
-										<p class="mb-0 ">12h 56m</p>
-									</div>
-									<div class="col-auto pe-1 d-flex align-self-center">
-										<i class="bi bi-table f-laranja"></i>
-									</div>
-									<div class="col-auto ps-0">
-										<p class="mb-0">15 lectures</p>
+									<div class="col-auto ms-lg-auto">
+										<p class="mb-0"><i class="bi bi-table f-laranja"></i> 68 lectures</p>
 									</div>
 								</div>
+								
 							</div> 
             </div> 
           </div>
@@ -506,7 +502,7 @@
 							<div class="card-body p-2">
 								<div class="row">
 									<div class="col-auto me-auto">
-										<button type="button" class="btn badge-verde" style="--bs-btn-padding-y: 0.1rem; --bs-btn-font-size: 0.75rem;">
+										<button type="button" class="btn badge-verde" style=" --bs-btn-padding-y: 0.1rem;--bs-btn-padding-x: 0.4rem;--bs-btn-font-size: 0.75rem;">
 											Begginer
 										</button>
 									</div>
@@ -535,17 +531,11 @@
 							</div> 
 							<div class="card-footer bg-white pb-0 px-2">
 								<div class="row pb-2 small">
-									<div class="col-auto pe-1 d-flex align-self-center">
-										<i class="bi bi-clock text-danger fw-bold"></i>
+									<div class="col-auto">
+										<p class="mb-0 "><i class="bi bi-clock text-danger fw-bold"></i> 36h 30m</p>
 									</div>
-									<div class="col-auto ps-0 me-auto">
-										<p class="mb-0 ">12h 56m</p>
-									</div>
-									<div class="col-auto pe-1 d-flex align-self-center">
-										<i class="bi bi-table f-laranja"></i>
-									</div>
-									<div class="col-auto ps-0">
-										<p class="mb-0">15 lectures</p>
+									<div class="col-auto ms-lg-auto">
+										<p class="mb-0"><i class="bi bi-table f-laranja"></i> 72 lectures</p>
 									</div>
 								</div>
 							</div> 
@@ -557,7 +547,7 @@
 							<div class="card-body p-2">
 								<div class="row">
 									<div class="col-auto me-auto">
-										<button type="button" class="btn badge-roxo" style="--bs-btn-padding-y: 0.1rem; --bs-btn-font-size: 0.75rem;">
+										<button type="button" class="btn badge-roxo" style=" --bs-btn-padding-y: 0.1rem;--bs-btn-padding-x: 0.4rem;--bs-btn-font-size: 0.75rem;">
 											All level
 										</button>
 									</div>
@@ -586,17 +576,11 @@
 							</div> 
 							<div class="card-footer bg-white pb-0 px-2">
 								<div class="row pb-2 small">
-									<div class="col-auto pe-1 d-flex align-self-center">
-										<i class="bi bi-clock text-danger fw-bold"></i>
+									<div class="col-auto">
+										<p class="mb-0 "><i class="bi bi-clock text-danger fw-bold"></i> 6h 56m</p>
 									</div>
-									<div class="col-auto ps-0 me-auto">
-										<p class="mb-0 ">12h 56m</p>
-									</div>
-									<div class="col-auto pe-1 d-flex align-self-center">
-										<i class="bi bi-table f-laranja"></i>
-									</div>
-									<div class="col-auto ps-0">
-										<p class="mb-0">15 lectures</p>
+									<div class="col-auto ms-lg-auto">
+										<p class="mb-0"><i class="bi bi-table f-laranja"></i> 82 lectures</p>
 									</div>
 								</div>
 							</div> 
@@ -608,7 +592,7 @@
 							<div class="card-body p-2">
 								<div class="row pb2">
 									<div class="col-auto me-auto">
-										<button type="button" class="btn badge-roxo" style="--bs-btn-padding-y: 0.1rem; --bs-btn-font-size: 0.75rem;">
+										<button type="button" class="btn badge-roxo" style=" --bs-btn-padding-y: 0.1rem;--bs-btn-padding-x: 0.4rem;--bs-btn-font-size: 0.75rem;">
 											All level
 										</button>
 									</div>
@@ -637,17 +621,11 @@
 							</div> 
 							<div class="card-footer bg-white pb-0 px-2">
 								<div class="row pb-2 small">
-									<div class="col-auto pe-1 d-flex align-self-center">
-										<i class="bi bi-clock text-danger fw-bold"></i>
+									<div class="col-auto">
+										<p class="mb-0 "><i class="bi bi-clock text-danger fw-bold"></i> 35h 20m</p>
 									</div>
-									<div class="col-auto ps-0 me-auto">
-										<p class="mb-0 ">12h 56m</p>
-									</div>
-									<div class="col-auto pe-1 d-flex align-self-center">
-										<i class="bi bi-table f-laranja"></i>
-									</div>
-									<div class="col-auto ps-0">
-										<p class="mb-0">15 lectures</p>
+									<div class="col-auto ms-lg-auto">
+										<p class="mb-0"><i class="bi bi-table f-laranja"></i> 89 lectures</p>
 									</div>
 								</div>
 							</div> 
@@ -662,13 +640,13 @@
             <div class="row">
               <div class="col-8">
                 <h2 class="text-start ps-2">Become an Instructor!</h2>
-                <p class="text-start ps-2 f-claro">
+                <p class="text-start ps-2 text-black-5">
                   Online learning and teaching marketplace with 5K+ courses & 10M
                   students. Taught by experts to help you acquire new skills.
                 </p>
               </div>
               <div class="col align-self-center d-flex justify-content-end pe-2">
-                <button type="button" class="btn btn-outline-warning text-center ">
+                <button type="button" class="btn btn-warning text-center ">
                   Start Teaching Today
                 </button>
               </div>
@@ -677,15 +655,15 @@
       </section>
 
       <section class="trending container">
-            <h1 class="text-center"><strong>Our trending Courses</strong></h1>
-            <p class="text-center">
-                Choose from hundreds of courses <i class="bi bi-fire"></i>
-                from specialist organizations
-            </p>
-          <div class="container">
-						<div class="row pb-5 gx-2 gy-4 justify-content-center">
-							<div class="col-md-5 col-lg-5">
-								<div class="card h-100 rounded shadow-sm border-0">
+        <h1 class="text-center"><strong>Our trending Courses</strong></h1>
+        <p class="text-center text-muted">
+          Check out most <i class="bi bi-fire text-danger"></i> courses in the market
+        </p>
+				<div id="carouselExampleControls" class="d-none d-sm-none d-md-block carousel carousel-dark slide mb-5" data-bs-ride="carousel">
+					<div class="carousel-inner">
+						<div class="carousel-item active">
+							<div class="cards-wrapper">
+								<div class="card h-100 rounded border">
 									<img src="assets/img/people-1.jpg" class="card-img-top" alt="..." />
 									<div class="card-body p-2">
 										<div class="row pb-2">
@@ -709,7 +687,7 @@
 											<p class="small text-warning mb-0">4.0 </p>
 										</div>
 										<div class="col-auto pe-0 ps-1">
-											<i class="small me-1 bi bi-star-fill text-warning"></i>
+											<i class="small me-1 bi bi-star-fill text-warning align-top"></i>
 										</div>
 										<div class="col-auto me-auto ps-1">
 											<p class="text-muted small mb-0">(3500)</p>
@@ -722,13 +700,13 @@
 										</div>
 										</div>
 												<div class="row pb-2 small">
-										<div class="col-auto pe-1 d-flex align-self-center">
+										<div class="col-auto pe-1">
 											<i class="bi bi-clock text-danger fw-bold"></i>
 										</div>
 										<div class="col-auto  ps-0 ">
 											<p class="mb-0 ">12h 56m</p>
 										</div>
-										<div class="col-auto pe-1 d-flex align-self-center">
+										<div class="col-auto ps-0 pe-1">
 											<i class="bi bi-table f-laranja"></i>
 										</div>
 										<div class="col-auto ps-0">
@@ -739,44 +717,48 @@
 									<div class="card-footer bg-white">
 										<div class="row">
 											<div class="col-auto pe-1">
-												<img id="avatar" src="./assets/img/portrait-4.jpg">
+												<div class="row">
+													<div class="col-auto">
+														<a href="#">
+															<img id="avatar" src="./assets/img/portrait-4.jpg">
+														</a>
+													</div>
+													<div class="col-auto align-self-center ps-0">
+														<p class="mb-0">Lori Stevens </p>
+													</div>
+												</div>
 											</div>
-											<div class="col-5 col-md-5 me-auto d-flex align-self-center ps-1">
-												<p class="mb-0">Lori Stevens </p>
-											</div>
-											<div class="col-4 col-md-4 ps-0 justify-content-end d-flex">
+											<div class="col-auto ms-auto">
 												<p class="mb-0 text-success fw-bold fs-3 f-verde">$255</p>
 											</div>
 										</div> 
 									</div> 
-								</div> 
-							</div>  
-							<div class="col-md-5 col-lg-5">
-								<div class="card h-100 rounded shadow-sm border-0">
-									<img src="assets/img/people-2.jpg" class="card-img-top" alt="..." />
+								</div>
+								<div class="card h-100 rounded border">
+									<img src="assets/img/people-4.jpg" class="card-img-top" alt="..." />
 									<div class="card-body p-2">
 										<div class="row pb-2">
 										<div class="col-auto pe-0">
 											<button type="button" class="btn badge-azul" style=" --bs-btn-padding-y: 0.1rem;--bs-btn-padding-x: 0.4rem;--bs-btn-font-size: 0.75rem;">
-												Design
+												Begginer
 											</button>
 										</div>
 										<div class="col-auto ps-1 me-auto">
 											<button type="button" class="btn badge-preto" style=" --bs-btn-padding-y: 0.1rem;--bs-btn-padding-x: 0.4rem;--bs-btn-font-size: 0.75rem;">
-												Begginer
+												Design
 											</button>
 										</div>
 										<div class="col-auto">
-											<i class="bi bi-bookmark-fill"></i>
+											<i class="bi bi-bookmark"></i>
 										</div>
 										</div>
-										<h5 class="card-title fw-bold">Time Managmente Mastery: Do More Stress Less</h5>
+										<h5 class="card-title fw-bold">Time Management Mastery: Do More Stress Less</h5>
 										<div class="row pb-2">
 										<div class="col-auto pe-0">
 											<p class="small text-warning mb-0">4.5 </p>
 										</div>
 										<div class="col-auto pe-0 ps-1">
-											<i class="small me-1 bi bi-star-fill text-warning"></i>
+											<i class="small me-1 bi bi-star-fill text-warning align-top"></i>
 										</div>
 										<div class="col-auto me-auto ps-1">
 											<p class="text-muted small mb-0">(2000)</p>
@@ -789,13 +771,13 @@
 										</div>
 										</div>
 												<div class="row pb-2 small">
-										<div class="col-auto pe-1 d-flex align-self-center">
+										<div class="col-auto pe-1">
 											<i class="bi bi-clock text-danger fw-bold"></i>
 										</div>
 										<div class="col-auto  ps-0 ">
 											<p class="mb-0 ">24h 56m</p>
 										</div>
-										<div class="col-auto pe-1 d-flex align-self-center">
+										<div class="col-auto pe-1 ps-0">
 											<i class="bi bi-table f-laranja"></i>
 										</div>
 										<div class="col-auto ps-0">
@@ -806,36 +788,786 @@
 									<div class="card-footer bg-white">
 										<div class="row">
 											<div class="col-auto pe-1">
-												<img id="avatar" src="./assets/img/portrait-5.jpg">
+												<div class="row">
+													<div class="col-auto">
+														<a href="#">
+															<img id="avatar" src="./assets/img/portrait-5.jpg">
+														</a>
+													</div>
+													<div class="col-auto align-self-center ps-0">
+														<p class="mb-0">Lilly Vasquez </p>
+													</div>
+												</div>
 											</div>
-											<div class="col-5 col-md-5 me-auto d-flex align-self-center ps-1">
-												<p class="mb-0">Lilly Vasquez </p>
-											</div>
-											<div class="col-4 col-md-4 ps-0 justify-content-end d-flex">
+											<div class="col-auto ms-auto">
 												<p class="mb-0 text-success fw-bold fs-3 f-verde">$500</p>
 											</div>
 										</div> 
 									</div> 
-								</div> 
-							</div>  
+								</div>
+								<div class="card h-100 rounded border">
+									<img src="assets/img/people-2.jpg" class="card-img-top" alt="..." />
+									<div class="card-body p-2">
+										<div class="row pb-2">
+										<div class="col-auto pe-0">
+											<button type="button" class="btn badge-azul" style=" --bs-btn-padding-y: 0.1rem;--bs-btn-padding-x: 0.4rem;--bs-btn-font-size: 0.75rem;">
+												Begginer
+											</button>
+										</div>
+										<div class="col-auto ps-1 me-auto">
+											<button type="button" class="btn badge-preto" style=" --bs-btn-padding-y: 0.1rem;--bs-btn-padding-x: 0.4rem;--bs-btn-font-size: 0.75rem;">
+												Design
+											</button>
+										</div>
+										<div class="col-auto">
+											<i class="bi bi-bookmark"></i>
+										</div>
+										</div>
+										<h5 class="card-title fw-bold">Complete Digital Marketing Guide - 8 Courses in 1</h5>
+										<div class="row pb-2">
+										<div class="col-auto pe-0">
+											<p class="small text-warning mb-0">4.0 </p>
+										</div>
+										<div class="col-auto pe-0 ps-1">
+											<i class="small me-1 bi bi-star-fill text-warning align-top"></i>
+										</div>
+										<div class="col-auto me-auto ps-1">
+											<p class="text-muted small mb-0">(4500)</p>
+										</div>
+										<div class="col-auto pe-0">
+											<p class="m-0 small mb-0">6500</p>
+										</div>
+										<div class="col-auto ps-1">
+											<p class="text-muted small mb-0">(Student)</p>
+										</div>
+										</div>
+												<div class="row pb-2 small">
+										<div class="col-auto pe-1">
+											<i class="bi bi-clock text-danger fw-bold"></i>
+										</div>
+										<div class="col-auto  ps-0 ">
+											<p class="mb-0 ">47h 56m</p>
+										</div>
+										<div class="col-auto pe-1 ps-0">
+											<i class="bi bi-table f-laranja"></i>
+										</div>
+										<div class="col-auto ps-0">
+											<p class="mb-0 cor-item-laranja">85 lectures</p>
+										</div>
+										</div>
+									</div>
+									<div class="card-footer bg-white">
+										<div class="row">
+											<div class="col-auto pe-1">
+												<div class="row">
+													<div class="col-auto">
+														<a href="#">
+															<img id="avatar" src="./assets/img/portrait-3.jpg">
+														</a>
+													</div>
+													<div class="col-auto align-self-center ps-0">
+														<p class="mb-0">Annie Lawson </p>
+													</div>
+												</div>
+											</div>
+											<div class="col-auto ms-auto">
+												<p class="mb-0 text-success fw-bold fs-3 f-verde">Free</p>
+											</div>
+										</div> 
+									</div> 
+								</div>
+							</div>
 						</div>
-          </div>
+						<div class="carousel-item">
+							<div class="cards-wrapper">
+								<div class="card h-100 rounded border">
+									<img src="assets/img/people-5.jpg" class="card-img-top" alt="..." />
+									<div class="card-body p-2">
+										<div class="row pb-2">
+										<div class="col-auto pe-0">
+											<button type="button" class="btn badge-azul" style=" --bs-btn-padding-y: 0.1rem;--bs-btn-padding-x: 0.4rem;--bs-btn-font-size: 0.75rem;">
+												All level
+											</button>
+										</div>
+										<div class="col-auto ps-1 me-auto">
+											<button type="button" class="btn badge-preto" style=" --bs-btn-padding-y: 0.1rem;--bs-btn-padding-x: 0.4rem;--bs-btn-font-size: 0.75rem;">
+												Development
+											</button>
+										</div>
+										<div class="col-auto">
+											<i class="bi bi-bookmark"></i>
+										</div>
+										</div>
+										<h5 class="card-title fw-bold">Angular - The complete guide (2021 Edition)</h5>
+										<div class="row pb-2">
+										<div class="col-auto pe-0">
+											<p class="small text-warning mb-0">4.0 </p>
+										</div>
+										<div class="col-auto pe-0 ps-1">
+											<i class="small me-1 bi bi-star-fill text-warning align-top"></i>
+										</div>
+										<div class="col-auto me-auto ps-1">
+											<p class="text-muted small mb-0">(3500)</p>
+										</div>
+										<div class="col-auto pe-0">
+											<p class="m-0 small mb-0">4500</p>
+										</div>
+										<div class="col-auto ps-1">
+											<p class="text-muted small mb-0">(Student)</p>
+										</div>
+										</div>
+												<div class="row pb-2 small">
+										<div class="col-auto pe-1">
+											<i class="bi bi-clock text-danger fw-bold"></i>
+										</div>
+										<div class="col-auto  ps-0 ">
+											<p class="mb-0 ">12h 56m</p>
+										</div>
+										<div class="col-auto ps-0 pe-1">
+											<i class="bi bi-table f-laranja"></i>
+										</div>
+										<div class="col-auto ps-0">
+											<p class="mb-0 cor-item-laranja">15 lectures</p>
+										</div>
+										</div>
+									</div>
+									<div class="card-footer bg-white">
+										<div class="row">
+											<div class="col-auto pe-1">
+												<div class="row">
+													<div class="col-auto">
+														<a href="#">
+															<img id="avatar" src="./assets/img/portrait-4.jpg">
+														</a>
+													</div>
+													<div class="col-auto align-self-center ps-0">
+														<p class="mb-0">Lori Stevens </p>
+													</div>
+												</div>
+											</div>
+											<div class="col-auto ms-auto">
+												<p class="mb-0 text-success fw-bold fs-3 f-verde">$255</p>
+											</div>
+										</div> 
+									</div> 
+								</div>
+								<div class="card h-100 rounded border">
+									<img src="assets/img/people-3.jpg" class="card-img-top" alt="..." />
+									<div class="card-body p-2">
+										<div class="row pb-2">
+										<div class="col-auto pe-0">
+											<button type="button" class="btn badge-azul" style=" --bs-btn-padding-y: 0.1rem;--bs-btn-padding-x: 0.4rem;--bs-btn-font-size: 0.75rem;">
+												Begginer
+											</button>
+										</div>
+										<div class="col-auto ps-1 me-auto">
+											<button type="button" class="btn badge-preto" style=" --bs-btn-padding-y: 0.1rem;--bs-btn-padding-x: 0.4rem;--bs-btn-font-size: 0.75rem;">
+												Design
+											</button>
+										</div>
+										<div class="col-auto">
+											<i class="bi bi-bookmark"></i>
+										</div>
+										</div>
+										<h5 class="card-title fw-bold">Time Management Mastery: Do More Stress Less</h5>
+										<div class="row pb-2">
+										<div class="col-auto pe-0">
+											<p class="small text-warning mb-0">4.5 </p>
+										</div>
+										<div class="col-auto pe-0 ps-1">
+											<i class="small me-1 bi bi-star-fill text-warning align-top"></i>
+										</div>
+										<div class="col-auto me-auto ps-1">
+											<p class="text-muted small mb-0">(2000)</p>
+										</div>
+										<div class="col-auto pe-0">
+											<p class="m-0 small mb-0">8000</p>
+										</div>
+										<div class="col-auto ps-1">
+											<p class="text-muted small mb-0">(Student)</p>
+										</div>
+										</div>
+												<div class="row pb-2 small">
+										<div class="col-auto pe-1">
+											<i class="bi bi-clock text-danger fw-bold"></i>
+										</div>
+										<div class="col-auto  ps-0 ">
+											<p class="mb-0 ">24h 56m</p>
+										</div>
+										<div class="col-auto pe-1 ps-0">
+											<i class="bi bi-table f-laranja"></i>
+										</div>
+										<div class="col-auto ps-0">
+											<p class="mb-0 cor-item-laranja">55 lectures</p>
+										</div>
+										</div>
+									</div>
+									<div class="card-footer bg-white">
+										<div class="row">
+											<div class="col-auto pe-1">
+												<div class="row">
+													<div class="col-auto">
+														<a href="#">
+															<img id="avatar" src="./assets/img/portrait-5.jpg">
+														</a>
+													</div>
+													<div class="col-auto align-self-center ps-0">
+														<p class="mb-0">Lilly Vasquez </p>
+													</div>
+												</div>
+											</div>
+											<div class="col-auto ms-auto">
+												<p class="mb-0 text-success fw-bold fs-3 f-verde">$500</p>
+											</div>
+										</div> 
+									</div> 
+								</div>
+								<div class="card h-100 rounded border">
+									<img src="assets/img/people-1.jpg" class="card-img-top" alt="..." />
+									<div class="card-body p-2">
+										<div class="row pb-2">
+										<div class="col-auto pe-0">
+											<button type="button" class="btn badge-azul" style=" --bs-btn-padding-y: 0.1rem;--bs-btn-padding-x: 0.4rem;--bs-btn-font-size: 0.75rem;">
+												Begginer
+											</button>
+										</div>
+										<div class="col-auto ps-1 me-auto">
+											<button type="button" class="btn badge-preto" style=" --bs-btn-padding-y: 0.1rem;--bs-btn-padding-x: 0.4rem;--bs-btn-font-size: 0.75rem;">
+												Design
+											</button>
+										</div>
+										<div class="col-auto">
+											<i class="bi bi-bookmark"></i>
+										</div>
+										</div>
+										<h5 class="card-title fw-bold">Complete Digital Marketing Guide - 8 Courses in 1</h5>
+										<div class="row pb-2">
+										<div class="col-auto pe-0">
+											<p class="small text-warning mb-0">4.0 </p>
+										</div>
+										<div class="col-auto pe-0 ps-1">
+											<i class="small me-1 bi bi-star-fill text-warning align-top"></i>
+										</div>
+										<div class="col-auto me-auto ps-1">
+											<p class="text-muted small mb-0">(4500)</p>
+										</div>
+										<div class="col-auto pe-0">
+											<p class="m-0 small mb-0">6500</p>
+										</div>
+										<div class="col-auto ps-1">
+											<p class="text-muted small mb-0">(Student)</p>
+										</div>
+										</div>
+												<div class="row pb-2 small">
+										<div class="col-auto pe-1">
+											<i class="bi bi-clock text-danger fw-bold"></i>
+										</div>
+										<div class="col-auto  ps-0 ">
+											<p class="mb-0 ">47h 56m</p>
+										</div>
+										<div class="col-auto pe-1 ps-0">
+											<i class="bi bi-table f-laranja"></i>
+										</div>
+										<div class="col-auto ps-0">
+											<p class="mb-0 cor-item-laranja">85 lectures</p>
+										</div>
+										</div>
+									</div>
+									<div class="card-footer bg-white">
+										<div class="row">
+											<div class="col-auto pe-1">
+												<div class="row">
+													<div class="col-auto">
+														<a href="#">
+															<img id="avatar" src="./assets/img/portrait-3.jpg">
+														</a>
+													</div>
+													<div class="col-auto align-self-center ps-0">
+														<p class="mb-0">Annie Lawson </p>
+													</div>
+												</div>
+											</div>
+											<div class="col-auto ms-auto">
+												<p class="mb-0 text-success fw-bold fs-3 f-verde">Free</p>
+											</div>
+										</div> 
+									</div> 
+								</div>
+							</div>
+						</div>
+						<div class="carousel-item">
+							<div class="cards-wrapper">
+								<div class="card h-100 rounded border">
+									<img src="assets/img/people-3.jpg" class="card-img-top" alt="..." />
+									<div class="card-body p-2">
+										<div class="row pb-2">
+										<div class="col-auto pe-0">
+											<button type="button" class="btn badge-azul" style=" --bs-btn-padding-y: 0.1rem;--bs-btn-padding-x: 0.4rem;--bs-btn-font-size: 0.75rem;">
+												All level
+											</button>
+										</div>
+										<div class="col-auto ps-1 me-auto">
+											<button type="button" class="btn badge-preto" style=" --bs-btn-padding-y: 0.1rem;--bs-btn-padding-x: 0.4rem;--bs-btn-font-size: 0.75rem;">
+												Development
+											</button>
+										</div>
+										<div class="col-auto">
+											<i class="bi bi-bookmark"></i>
+										</div>
+										</div>
+										<h5 class="card-title fw-bold">Angular - The complete guide (2021 Edition)</h5>
+										<div class="row pb-2">
+										<div class="col-auto pe-0">
+											<p class="small text-warning mb-0">4.0 </p>
+										</div>
+										<div class="col-auto pe-0 ps-1">
+											<i class="small me-1 bi bi-star-fill text-warning align-top"></i>
+										</div>
+										<div class="col-auto me-auto ps-1">
+											<p class="text-muted small mb-0">(3500)</p>
+										</div>
+										<div class="col-auto pe-0">
+											<p class="m-0 small mb-0">4500</p>
+										</div>
+										<div class="col-auto ps-1">
+											<p class="text-muted small mb-0">(Student)</p>
+										</div>
+										</div>
+												<div class="row pb-2 small">
+										<div class="col-auto pe-1">
+											<i class="bi bi-clock text-danger fw-bold"></i>
+										</div>
+										<div class="col-auto  ps-0 ">
+											<p class="mb-0 ">12h 56m</p>
+										</div>
+										<div class="col-auto ps-0 pe-1">
+											<i class="bi bi-table f-laranja"></i>
+										</div>
+										<div class="col-auto ps-0">
+											<p class="mb-0 cor-item-laranja">15 lectures</p>
+										</div>
+										</div>
+									</div>
+									<div class="card-footer bg-white">
+										<div class="row">
+											<div class="col-auto pe-1">
+												<div class="row">
+													<div class="col-auto">
+														<a href="#">
+															<img id="avatar" src="./assets/img/portrait-4.jpg">
+														</a>
+													</div>
+													<div class="col-auto align-self-center ps-0">
+														<p class="mb-0">Lori Stevens </p>
+													</div>
+												</div>
+											</div>
+											<div class="col-auto ms-auto">
+												<p class="mb-0 text-success fw-bold fs-3 f-verde">$255</p>
+											</div>
+										</div> 
+									</div> 
+								</div>
+								<div class="card h-100 rounded border">
+									<img src="assets/img/people-4.jpg" class="card-img-top" alt="..." />
+									<div class="card-body p-2">
+										<div class="row pb-2">
+										<div class="col-auto pe-0">
+											<button type="button" class="btn badge-azul" style=" --bs-btn-padding-y: 0.1rem;--bs-btn-padding-x: 0.4rem;--bs-btn-font-size: 0.75rem;">
+												Begginer
+											</button>
+										</div>
+										<div class="col-auto ps-1 me-auto">
+											<button type="button" class="btn badge-preto" style=" --bs-btn-padding-y: 0.1rem;--bs-btn-padding-x: 0.4rem;--bs-btn-font-size: 0.75rem;">
+												Design
+											</button>
+										</div>
+										<div class="col-auto">
+											<i class="bi bi-bookmark"></i>
+										</div>
+										</div>
+										<h5 class="card-title fw-bold">Time Management Mastery: Do More Stress Less</h5>
+										<div class="row pb-2">
+										<div class="col-auto pe-0">
+											<p class="small text-warning mb-0">4.5 </p>
+										</div>
+										<div class="col-auto pe-0 ps-1">
+											<i class="small me-1 bi bi-star-fill text-warning align-top"></i>
+										</div>
+										<div class="col-auto me-auto ps-1">
+											<p class="text-muted small mb-0">(2000)</p>
+										</div>
+										<div class="col-auto pe-0">
+											<p class="m-0 small mb-0">8000</p>
+										</div>
+										<div class="col-auto ps-1">
+											<p class="text-muted small mb-0">(Student)</p>
+										</div>
+										</div>
+												<div class="row pb-2 small">
+										<div class="col-auto pe-1">
+											<i class="bi bi-clock text-danger fw-bold"></i>
+										</div>
+										<div class="col-auto  ps-0 ">
+											<p class="mb-0 ">24h 56m</p>
+										</div>
+										<div class="col-auto pe-1 ps-0">
+											<i class="bi bi-table f-laranja"></i>
+										</div>
+										<div class="col-auto ps-0">
+											<p class="mb-0 cor-item-laranja">55 lectures</p>
+										</div>
+										</div>
+									</div>
+									<div class="card-footer bg-white">
+										<div class="row">
+											<div class="col-auto pe-1">
+												<div class="row">
+													<div class="col-auto">
+														<a href="#">
+															<img id="avatar" src="./assets/img/portrait-5.jpg">
+														</a>
+													</div>
+													<div class="col-auto align-self-center ps-0">
+														<p class="mb-0">Lilly Vasquez </p>
+													</div>
+												</div>
+											</div>
+											<div class="col-auto ms-auto">
+												<p class="mb-0 text-success fw-bold fs-3 f-verde">$500</p>
+											</div>
+										</div> 
+									</div> 
+								</div>
+								<div class="card h-100 rounded border">
+									<img src="assets/img/people-5.jpg" class="card-img-top" alt="..." />
+									<div class="card-body p-2">
+										<div class="row pb-2">
+										<div class="col-auto pe-0">
+											<button type="button" class="btn badge-azul" style=" --bs-btn-padding-y: 0.1rem;--bs-btn-padding-x: 0.4rem;--bs-btn-font-size: 0.75rem;">
+												Begginer
+											</button>
+										</div>
+										<div class="col-auto ps-1 me-auto">
+											<button type="button" class="btn badge-preto" style=" --bs-btn-padding-y: 0.1rem;--bs-btn-padding-x: 0.4rem;--bs-btn-font-size: 0.75rem;">
+												Design
+											</button>
+										</div>
+										<div class="col-auto">
+											<i class="bi bi-bookmark"></i>
+										</div>
+										</div>
+										<h5 class="card-title fw-bold">Complete Digital Marketing Guide - 8 Courses in 1</h5>
+										<div class="row pb-2">
+										<div class="col-auto pe-0">
+											<p class="small text-warning mb-0">4.0 </p>
+										</div>
+										<div class="col-auto pe-0 ps-1">
+											<i class="small me-1 bi bi-star-fill text-warning align-top"></i>
+										</div>
+										<div class="col-auto me-auto ps-1">
+											<p class="text-muted small mb-0">(4500)</p>
+										</div>
+										<div class="col-auto pe-0">
+											<p class="m-0 small mb-0">6500</p>
+										</div>
+										<div class="col-auto ps-1">
+											<p class="text-muted small mb-0">(Student)</p>
+										</div>
+										</div>
+												<div class="row pb-2 small">
+										<div class="col-auto pe-1">
+											<i class="bi bi-clock text-danger fw-bold"></i>
+										</div>
+										<div class="col-auto  ps-0 ">
+											<p class="mb-0 ">47h 56m</p>
+										</div>
+										<div class="col-auto pe-1 ps-0">
+											<i class="bi bi-table f-laranja"></i>
+										</div>
+										<div class="col-auto ps-0">
+											<p class="mb-0 cor-item-laranja">85 lectures</p>
+										</div>
+										</div>
+									</div>
+									<div class="card-footer bg-white">
+										<div class="row">
+											<div class="col-auto pe-1">
+												<div class="row">
+													<div class="col-auto">
+														<a href="#">
+															<img id="avatar" src="./assets/img/portrait-3.jpg">
+														</a>
+													</div>
+													<div class="col-auto align-self-center ps-0">
+														<p class="mb-0">Annie Lawson </p>
+													</div>
+												</div>
+											</div>
+											<div class="col-auto ms-auto">
+												<p class="mb-0 text-success fw-bold fs-3 f-verde">Free</p>
+											</div>
+										</div> 
+									</div> 
+								</div>
+							</div>
+						</div>	
+					</div>
+					<button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
+						<span class="carousel-control-prev-icon" aria-hidden="true"></span>
+						<span class="visually-hidden">Previous</span>
+					</button>
+					<button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
+						<span class="carousel-control-next-icon" aria-hidden="true"></span>
+						<span class="visually-hidden">Next</span>
+					</button>
+				</div>
+				<div id="carouselExampleControls" class="d-sm-block d-md-none carousel carousel-dark slide mb-5" data-bs-ride="carousel">
+					<div class="carousel-inner">
+						<div class="carousel-item active">
+							<div class="card h-100 rounded border">
+								<img src="assets/img/people-1.jpg" class="card-img-top" alt="..." />
+								<div class="card-body p-2">
+									<div class="row pb-2">
+									<div class="col-auto pe-0">
+										<button type="button" class="btn badge-azul" style=" --bs-btn-padding-y: 0.1rem;--bs-btn-padding-x: 0.4rem;--bs-btn-font-size: 0.75rem;">
+											All level
+										</button>
+									</div>
+									<div class="col-auto ps-1 me-auto">
+										<button type="button" class="btn badge-preto" style=" --bs-btn-padding-y: 0.1rem;--bs-btn-padding-x: 0.4rem;--bs-btn-font-size: 0.75rem;">
+											Development
+										</button>
+									</div>
+									<div class="col-auto">
+										<i class="bi bi-bookmark"></i>
+									</div>
+									</div>
+									<h5 class="card-title fw-bold">Angular - The complete guide (2021 Edition)</h5>
+									<div class="row pb-2">
+									<div class="col-auto pe-0">
+										<p class="small text-warning mb-0">4.0 </p>
+									</div>
+									<div class="col-auto pe-0 ps-1">
+										<i class="small me-1 bi bi-star-fill text-warning align-top"></i>
+									</div>
+									<div class="col-auto me-auto ps-1">
+										<p class="text-muted small mb-0">(3500)</p>
+									</div>
+									<div class="col-auto pe-0">
+										<p class="m-0 small mb-0">4500</p>
+									</div>
+									<div class="col-auto ps-1">
+										<p class="text-muted small mb-0">(Student)</p>
+									</div>
+									</div>
+											<div class="row pb-2 small">
+									<div class="col-auto pe-1">
+										<i class="bi bi-clock text-danger fw-bold"></i>
+									</div>
+									<div class="col-auto  ps-0 ">
+										<p class="mb-0 ">12h 56m</p>
+									</div>
+									<div class="col-auto ps-0 pe-1">
+										<i class="bi bi-table f-laranja"></i>
+									</div>
+									<div class="col-auto ps-0">
+										<p class="mb-0 cor-item-laranja">15 lectures</p>
+									</div>
+									</div>
+								</div>
+								<div class="card-footer bg-white">
+									<div class="row">
+										<div class="col-auto pe-1">
+											<div class="row">
+												<div class="col-auto">
+													<a href="#">
+														<img id="avatar" src="./assets/img/portrait-4.jpg">
+													</a>
+												</div>
+												<div class="col-auto align-self-center ps-0">
+													<p class="mb-0">Lori Stevens </p>
+												</div>
+											</div>
+										</div>
+										<div class="col-auto ms-auto">
+											<p class="mb-0 text-success fw-bold fs-3 f-verde">$255</p>
+										</div>
+									</div> 
+								</div> 
+							</div>
+						</div>
+						<div class="carousel-item">
+							<div class="card h-100 rounded border">
+								<img src="assets/img/people-4.jpg" class="card-img-top" alt="..." />
+								<div class="card-body p-2">
+									<div class="row pb-2">
+									<div class="col-auto pe-0">
+										<button type="button" class="btn badge-azul" style=" --bs-btn-padding-y: 0.1rem;--bs-btn-padding-x: 0.4rem;--bs-btn-font-size: 0.75rem;">
+											Begginer
+										</button>
+									</div>
+									<div class="col-auto ps-1 me-auto">
+										<button type="button" class="btn badge-preto" style=" --bs-btn-padding-y: 0.1rem;--bs-btn-padding-x: 0.4rem;--bs-btn-font-size: 0.75rem;">
+											Design
+										</button>
+									</div>
+									<div class="col-auto">
+										<i class="bi bi-bookmark"></i>
+									</div>
+									</div>
+									<h5 class="card-title fw-bold">Time Management Mastery: Do More Stress Less</h5>
+									<div class="row pb-2">
+									<div class="col-auto pe-0">
+										<p class="small text-warning mb-0">4.5 </p>
+									</div>
+									<div class="col-auto pe-0 ps-1">
+										<i class="small me-1 bi bi-star-fill text-warning align-top"></i>
+									</div>
+									<div class="col-auto me-auto ps-1">
+										<p class="text-muted small mb-0">(2000)</p>
+									</div>
+									<div class="col-auto pe-0">
+										<p class="m-0 small mb-0">8000</p>
+									</div>
+									<div class="col-auto ps-1">
+										<p class="text-muted small mb-0">(Student)</p>
+									</div>
+									</div>
+											<div class="row pb-2 small">
+									<div class="col-auto pe-1">
+										<i class="bi bi-clock text-danger fw-bold"></i>
+									</div>
+									<div class="col-auto  ps-0 ">
+										<p class="mb-0 ">24h 56m</p>
+									</div>
+									<div class="col-auto pe-1 ps-0">
+										<i class="bi bi-table f-laranja"></i>
+									</div>
+									<div class="col-auto ps-0">
+										<p class="mb-0 cor-item-laranja">55 lectures</p>
+									</div>
+									</div>
+								</div>
+								<div class="card-footer bg-white">
+									<div class="row">
+										<div class="col-auto pe-1">
+											<div class="row">
+												<div class="col-auto">
+													<a href="#">
+														<img id="avatar" src="./assets/img/portrait-5.jpg">
+													</a>
+												</div>
+												<div class="col-auto align-self-center ps-0">
+													<p class="mb-0">Lilly Vasquez </p>
+												</div>
+											</div>
+										</div>
+										<div class="col-auto ms-auto">
+											<p class="mb-0 text-success fw-bold fs-3 f-verde">$500</p>
+										</div>
+									</div> 
+								</div> 
+							</div>
+						</div>
+						<div class="carousel-item">
+							<div class="card h-100 rounded border">
+								<img src="assets/img/people-2.jpg" class="card-img-top" alt="..." />
+								<div class="card-body p-2">
+									<div class="row pb-2">
+									<div class="col-auto pe-0">
+										<button type="button" class="btn badge-azul" style=" --bs-btn-padding-y: 0.1rem;--bs-btn-padding-x: 0.4rem;--bs-btn-font-size: 0.75rem;">
+											Begginer
+										</button>
+									</div>
+									<div class="col-auto ps-1 me-auto">
+										<button type="button" class="btn badge-preto" style=" --bs-btn-padding-y: 0.1rem;--bs-btn-padding-x: 0.4rem;--bs-btn-font-size: 0.75rem;">
+											Design
+										</button>
+									</div>
+									<div class="col-auto">
+										<i class="bi bi-bookmark"></i>
+									</div>
+									</div>
+									<h5 class="card-title fw-bold">Complete Digital Marketing Guide - 8 Courses in 1</h5>
+									<div class="row pb-2">
+									<div class="col-auto pe-0">
+										<p class="small text-warning mb-0">4.0 </p>
+									</div>
+									<div class="col-auto pe-0 ps-1">
+										<i class="small me-1 bi bi-star-fill text-warning align-top"></i>
+									</div>
+									<div class="col-auto me-auto ps-1">
+										<p class="text-muted small mb-0">(4500)</p>
+									</div>
+									<div class="col-auto pe-0">
+										<p class="m-0 small mb-0">6500</p>
+									</div>
+									<div class="col-auto ps-1">
+										<p class="text-muted small mb-0">(Student)</p>
+									</div>
+									</div>
+											<div class="row pb-2 small">
+									<div class="col-auto pe-1">
+										<i class="bi bi-clock text-danger fw-bold"></i>
+									</div>
+									<div class="col-auto  ps-0 ">
+										<p class="mb-0 ">47h 56m</p>
+									</div>
+									<div class="col-auto pe-1 ps-0">
+										<i class="bi bi-table f-laranja"></i>
+									</div>
+									<div class="col-auto ps-0">
+										<p class="mb-0 cor-item-laranja">85 lectures</p>
+									</div>
+									</div>
+								</div>
+								<div class="card-footer bg-white">
+									<div class="row">
+										<div class="col-auto pe-1 me-auto">
+											<div class="row">
+												<div class="col-auto">
+													<a href="#">
+														<img id="avatar" src="./assets/img/portrait-3.jpg">
+													</a>
+												</div>
+												<div class="col-auto align-self-center ps-0">
+													<p class="mb-0">Annie Lawson </p>
+												</div>
+											</div>
+										</div>
+										<div class="col-auto">
+											<p class="mb-0 text-success fw-bold fs-3 f-verde">Free</p>
+										</div>
+									</div> 
+								</div> 
+							</div>
+						</div>	
+					</div>
+					<button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
+						<span class="carousel-control-prev-icon" aria-hidden="true"></span>
+						<span class="visually-hidden">Previous</span>
+					</button>
+					<button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
+						<span class="carousel-control-next-icon" aria-hidden="true"></span>
+						<span class="visually-hidden">Next</span>
+					</button>
+				</div>
       </section>
 
       <section class="feedbacks">
-				<div class="container-fluid cor-bg-feedbacks col-xxl-8 px-4 py-5">
+				<div class="container-fluid bg-secondary col-xxl-8 px-4 py-5">
 					<div class="container-fluid">
-
-						<div class="row flex-lg-row g-5 py-5">
-							<div class="col-6 col-sm-8 col-lg-7">
-								<div class="row flex row-cols-md-2 justify-content-around">
-									<div class="col-7 col-lg-7 p-0">
+						<div class="row flex-lg-row g-5 py-5 justify-content-center">
+							<div class="col-12 col-sm-10 col-lg-7">
+								<div class="row flex row-cols-md-2">
+									<div class="col-12 col-lg-7 pe-md-3 px-0">
 										<div class="row pt-5">
 											<div class="col-12">
-												<div class="card text-center" style="width: 24rem;" >
+												<div class="card text-center rounded shadow-sm border-0">
 													<div class="card-body p-4">
 														<div class="m-auto mb-2" id="avatar-card-wrapper">
-															<img class="card-img-top mx-0 mb-2"  src="./assets/img/portrait-1.jpg"></img>
+															<a href="#"><img class="card-img-top mx-0 mb-2"  src="./assets/img/portrait-1.jpg"></img></a>
 														</div>
 														<p class="card-text text-muted"><i class="bi bi-quote"> </i>Moonlight condimentum blandit lorem, vel fermentum augue auctor non. Suspendisse non mi sed nibh placerat ullamcorper ac. <i class="bi bi-quote" id="flip-icon"></i></p>
 														<div class="small text-center d-flex align-self-top justify-content-center pb-2">
@@ -851,9 +1583,9 @@
 											</div>
 
 										</div>
-										<div class="row pt-4">
-											<div class="col-11 pe-0">
-												<div class="card ms-auto rounded-4 text-center bg-primary text-white" style="width: 11rem;">
+										<div class="row pt-4 justify-content-end">
+											<div class="col-12 col-lg-6 mb-3">
+												<div class="card card-ratings ms-auto rounded-4 text-center shadow-sm border-0 bg-primary text-white">
 													<div class="card-body">
 														<h5 class="card-text fw-bold mb-1">4.5/5.0</h5>
 														<div class="small text-center d-flex align-self-top justify-content-center mb-1">
@@ -868,59 +1600,60 @@
 												</div>
 											</div>
 										</div>
-										
-											
-										
 									</div>
-
-
-									<div class="col-5 col-lg-5">
+									<div class="col-12 col-lg-5">
 										<div class="row flex">
-											<div class="col-md-10 col-lg-8 col-xl-5 p-0">
-												<div class="card" style="width: 14rem;">
-													<div class="card-body">
-														<div class="row flex align-items-center gy-2">
-															<div class="col-auto">
-																<p class="fw-bold mb-1">100+ Verified Mentors</p>
-															</div>
-															<div class="col-auto pe-0 align-content-stretch">
-																<img id="avatar" src="./assets/img/portrait-4.jpg">
-															</div>
-															<div class="col-auto">
-																<p class="fw-bold mb-0">Lori Stevens</p>
-																<p class="small mb-0 text-muted">
-																	Tutor of physics
-																</p>
-															</div>
-															<div class="col-auto pe-0 align-content-stretch">
-																<img id="avatar" src="./assets/img/portrait-3.jpg">
-															</div>
-															<div class="col-auto">
-																<p class="fw-bold mb-0">Annie Lawson</p>
-																<p class="small mb-0 text-muted">
-																	Tutor of technology
-																</p>
-															</div>
-															<div class="col-auto pe-0 align-content-stretch">
-																<img id="avatar" src="./assets/img/portrait-5.jpg">
-															</div>
-															<div class="col-auto">
-																<p class="fw-bold mb-0">Lilly Vasquez</p>
-																<p class="small mb-0 text-muted">
-																	Tutor of chemistry
-																</p>
-															</div>
-														</div>	
-													</div>
+											<div class="col-md-10 col-lg-12 col-xl-10 px-0">
+												<div class="card rounded shadow-sm border-0 ">
+													<div class="card-body align-self-center px-md-2 px-lg-4">
+														<p class="fw-bold mb-1">100+ Verified Mentors</p>
+														<div class="row mt-3">
+																<div class="col-auto pe-0 align-content-stretch">
+																	<img id="avatar" src="./assets/img/portrait-4.jpg">
+																</div>
+																<div class="col-auto pe-0">
+																	<p class="fw-bold mb-0">Lori Stevens</p>
+																	<p class="small mb-0 text-muted">
+																		Tutor of physics
+																	</p>
+																</div>
+														</div>
+														<div class="row mt-3">
+																<div class="col-auto pe-0 align-content-stretch">
+																	<img id="avatar" src="./assets/img/portrait-3.jpg">
+																</div>
+																<div class="col-auto pe-0">
+																	<p class="fw-bold mb-0">Annie Lawson</p>
+																	<p class="small mb-0 text-muted">
+																		Tutor of technology
+																	</p>
+																</div>
+														</div>
+														<div class="row mt-3">
+																<div class="col-auto pe-0 align-content-stretch">
+																	<img id="avatar" src="./assets/img/portrait-5.jpg">
+																</div>
+																<div class="col-auto pe-0">
+																	<p class="fw-bold mb-0">Lilly Vasquez</p>
+																	<p class="small mb-0 text-muted">
+																		Tutor of chemistry
+																	</p>
+																</div>
+														</div>
+															
+													</div>	
 												</div>
 											</div>
-										</div>	
-										<div class="row pt-4 flex">
-											<div class="col-12 col-lg-12 ps-0">
-												<div class="card text-center" style="width: 16rem;">
+										</div>
+										
+										<div class="row pt-4 flex justify-content-center">
+											<div class="col-12 col-lg-12 px-0">
+												<div class="card text-center  rounded shadow-sm border-0">
 													<div class="card-body p-4">
 														<div class="m-auto mb-2"id="avatar-card-wrapper">
-															<img class="card-img-top mx-0 mb-2" src="./assets/img/portrait-2.jpg"></img>
+															<a href="#">
+																<img class="card-img-top mx-0 mb-2" src="./assets/img/portrait-2.jpg"></img>
+															</a>
 														</div>
 														<p class="card-text text-muted"><i class="bi bi-quote"> </i>Moonlight condimentum blandit lorem, vel fermentum augue auctor ondimentum. <i class="bi bi-quote" id="flip-icon"></i></p>
 														<div class="small text-center d-flex align-self-top justify-content-center pb-2">
@@ -939,13 +1672,9 @@
 											
 										</div>
 									</div>
-									
 								</div>
-								
 							</div>
-
-
-							<div class="col-lg-5 ms-auto align-self-center SOMEVALUES">
+							<div class="col-lg-5 ms-auto align-self-center">
 								<h1 class="fw-bold lh-1 mb-3">
 								Some valuable feedback from our students
 								</h2>
@@ -968,7 +1697,7 @@
     </main>
 		<footer>
 			<div class="container">
-				<div class="row pt-4 gy-4 mb-4">
+				<div class="row pt-4 gy-4 mb-4 justify-content-between">
 					<div class="col-md-3 ">
 						<img src="./assets/img/logo.png" alt="" style="width:8rem;" class="pt-2 mb-2">
 						<p class="text-muted small pt-2">
@@ -1101,14 +1830,15 @@
 					</div>
 					
 					<hr>
+
 					<div class="container">
 						<div class="row d-flex align-items-center py-3 px-0 justify-content-between">
-							<div class="col-lg-8 me-auto">
+							<div class="col-auto">
 								<p class="small text-muted mb-0">
 									Copyrights @2022 Eduport. All rights reserved
 								</p>
 							</div>
-							<div class="col-auto">
+							<div class="col-auto ms-auto">
 								<div class="btn-group dropup">
 									<button type="button" class="text-muted btn btn-sm dropdown-toggle py-0" data-bs-toggle="dropdown" aria-expanded="false"><i class="small bi bi-globe2"></i> Language </button>
 									<ul class="dropdown-menu">
