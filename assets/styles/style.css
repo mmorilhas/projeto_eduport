@@ -1,45 +1,57 @@
-root{
-  --amarelo-escuro: #f7c32e;
-  --amarelo-claro: #fef6e0 ; 
-
-  --fonte-escuro: #24292d;
-  --fonte-claro: #9b9b9d;
-  --vermelho-claro: #fbe9eb;
-  --vermelho-escuro: #d6293e;
-  --cinza-claro:#e8ebed;
-  --cinza-escuro:#1d3b53;
-  --roxo-claro:#f0ecf9;
-  --roxo-escuro: #6f42c1;
-  --verde-claro:#e6f8f3;
-  --verde-escuro:#17a2b8;
-  --azul-claro:#e6f0f9;
-  --azul-escuro:#066ac9;
-  --cinza-section: #f4f6f7;
-  --cinza-fundo:#f5f7f9;
-  --laranja-calendario:#fd7e14;
-  -verde-dinheiro:#0ebc88;
-}
-
 body{
   color: #24292d;
   
 }
 
-.btn-danger{
- background-color:#fbe9eb;
- color: #d6293e;
- font-size: medium;
- font-weight: 600;
- border: none;
+
+/* -----  cores   ----- */
+.bg-primary{
+  background-color: #066ac9!important;
+}
+
+.bg-secondary{
+  background-color: #f4f6f7!important;
+}
+
+.text-muted{
+  color: #747579!important;
+}
+
+.f-laranja{
+  color: #fd7e14;
+}
+
+.f-vermelho{
+  color: #d6293e;
+}
+
+.f-verde{
+  color: #0ebc88;
+}
+
+.f-escuro{
+  color: #24292d;;
+}
+
+.text-warning{
+  color: #f7c32e;
+}
+
+.cor-bg-populares{
+  background-color: rgb(203, 233, 255);
+}
+
+.cor-banner-instrutor{
+  background-color: #17a2b8;
+}
+
+.botao-play{
+  color: #066ac9;
 }
 
 
-.btn-danger:hover, .btn-danger:focus, .btn-danger:active, .btn-danger.active, .open>.dropdown-toggle.btn-danger  {
-  color: #fbe9eb;
-  background-color:#d6293e;
-  border-color: none;
-}  
 
+/* -----  botoes   ----- */
 .btn-primary{
   background-color: #066ac9;
   border: none;
@@ -51,15 +63,6 @@ body{
   border: 1px solid #066ac9;
 }
 
-
-
-.bg-primary{
-  background-color: #066ac9!important;
-}
-
-.bg-secondary{
-  background-color: #f4f6f7!important;
-}
 .btn-secondary{
   font-size: 0.75rem;
   background-color:#e6f0f9 ;
@@ -73,6 +76,21 @@ body{
   border: none;
 }
 
+.btn-danger{
+ background-color:#fbe9eb;
+ color: #d6293e;
+ font-size: medium;
+ font-weight: 600;
+ border: none;
+}
+
+.btn-danger:hover, .btn-danger:focus, .btn-danger:active, .btn-danger.active, .open>.dropdown-toggle.btn-danger  {
+  color: #fbe9eb;
+  background-color:#d6293e;
+  border-color: none;
+}  
+
+
 .btn-warning{
   color: #f7c32e;
   background-color: transparent;
@@ -84,6 +102,63 @@ body{
   color: white;
   background-color: #f7c32e;
 }
+
+
+
+/* -----  placas   ----- */
+
+.placas i{
+  font-size: 3.5rem;
+}
+
+.placas__1{
+  background-color: #fef6e0;
+  color: #f7c32e;
+}
+
+.placas__2{
+  background-color: #e8ebed;
+  color: #1d3b53;
+}
+
+.placas__3{
+  background-color: #f0ecf9;
+  color: #6f42c1;
+}
+
+.placas__4{
+  color: #17a2b8;
+  background-color: #e7f6f8;
+}
+
+
+
+/* -----  badges   ----- */
+
+.badge-roxo{
+  background-color: #f0ecf9;
+  color: #6f42c1;
+}
+
+.badge-verde{
+  background-color: #e6f8f3 ;
+  color: #0ebc88;
+}
+
+.badge-azul{
+  background-color:#e6f0f9 ;
+  color: #066ac9;
+}
+
+.badge-preto{
+  background-color: #24292d;
+  color: #e8ebed;
+}
+
+
+
+
+/* -----  nav e navbar   ----- */
 
 .navbar-nav, .nav {
   font-size: 0.75rem;
@@ -107,86 +182,6 @@ body{
   background-color: #e6f0f9;
 }
 
-.text-muted{
-  color: #747579!important;
-}
-
-.placas i{
-  font-size: 3.5rem;
-}
-.cor-banner-instrutor{
-  background-color: #17a2b8;
-}
-
-
-.badge-roxo{
-  background-color: #f0ecf9;
-  color: #6f42c1;
-}
-
-.badge-verde{
-  background-color: #e6f8f3 ;
-  color: #0ebc88;
-}
-
-.badge-azul{
-  background-color:#e6f0f9 ;
-  color: #066ac9;
-}
-
-.badge-preto{
-  background-color: #24292d;
-  color: #e8ebed;
-}
-
-.f-laranja{
-  color: #fd7e14;
-}
-
-.f-vermelho{
-  color: #d6293e;
-}
-
-.f-verde{
-  color: #0ebc88;
-}
-
-.f-escuro{
-  color: #24292d;;
-}
-
-.text-warning{
-  color: #f7c32e;
-}
-
-.placas__1{
-  background-color: #fef6e0;
-  color: #f7c32e;
-}
-
-.placas__2{
-  background-color: #e8ebed;
-  color: #1d3b53;
-}
-
-.placas__3{
-  background-color: #f0ecf9;
-  color: #6f42c1;
-}
-
-.placas__4{
-  color: #17a2b8;
-  background-color: #e7f6f8;
-}
-
-.cor-bg{
-  background-color: rgb(203, 233, 255);
-}
-
-.nav-fonte-botao{
-  font-size: 0.75rem;
-}
-
 #perfil{
   background-image: url('../img/portrait-1.jpg');
   background-size: cover;
@@ -195,51 +190,16 @@ body{
   height: 35px;
 }
 
-#avatar{
-  height: 45px;
-  width: 45px;
-  background-size: cover;
-  background-position: center;
-  border-radius: 8%;
-}
-
-#avatar-card-wrapper{
-  width: 80px;
-  height: 80px; 
-  overflow: hidden; 
-  border-radius: 50%;
-}
-
-#avatar-card-wrapper img{
-  width: 100%;
-  height: auto;
-}
-
-#flip-icon{ 
-  display: inline-block;
-  transform: rotate(180deg);
-}
-
-.app-store{
-  width: 106px;
-}
-
-.icones-redes{
-  width: 26px;
-  box-shadow: 0px 0px 12px 12px rgba(180, 174, 180, 0.075);
-}
-
-.cards-wrapper{
-  display: flex;
-}
-
-.cards-wrapper .card {
-  margin: 0 .5rem ;
-}
 
 
-.botao-play{
-  color: #066ac9;
+/* -----  topo   ----- */
+.brush-stroke{
+  background-image: url('../img/brush-stroke.png');
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  padding: 3px 50px 10px 15px;
+  margin: auto auto auto 8px;
+  color: #24292d;
 }
 
 .card-daily{
@@ -251,7 +211,6 @@ body{
   background-image: url('../img/bg-triangulos.png');
   background-size: cover;
   background-color: #0ebc88d7;
-
 }
 
 .daily-students-wrapper img{
@@ -269,7 +228,6 @@ body{
   height: 35px;
 }
 
-
 .card-messages{
   position: absolute;
   bottom: 100px;
@@ -284,7 +242,6 @@ body{
   color: #e8ebed;
 }
 
-
 @media screen and (max-width: 767px) {
   .card-messages{
     bottom: 0px;
@@ -297,44 +254,105 @@ body{
   }
   
   .card-daily{
-    position: absolute;
     top: 100px;
     right: -80px;
   }
-  
 }
 
 @media screen and (max-width: 575px) {
   .card-messages{
     bottom: 120px;
-    left: 280px;
+    left: 250px;
     background-color: transparent;
   }
-  
 }
 
-
-@media screen and (max-width: 575px) {
+@media screen and (max-width: 520px) {
   .card-messages{
     display: none;
   }
 
   .card-daily{
-    position: absolute;
     top: 0px;
     right: -50px;
     width: 9rem;
-
   }
 
   .daily-students-wrapper img{
     margin-top: -25px;
   }
-   
-  
+}
+
+
+/* -----  trending   ----- */
+.cards-wrapper{
+  display: flex;
+}
+
+.cards-wrapper .card {
+  margin: 0 .5rem ;
+}
+
+#avatar{
+  height: 45px;
+  width: 45px;
+  background-size: cover;
+  background-position: center;
+  border-radius: 8%;
 }
 
 .card-ratings{
   background-image: url('../img/bg-triangulos.png');
   background-size: cover;
 }
+
+.carousel-control-prev, .carousel-control-next{
+  background-color: #f0ecf99d;  
+  width: 6vh;
+  height: 6vh;
+  border-radius: 50%;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.carousel-control-prev span, .carousel-control-next span{
+  width: 1.5rem;
+  height: 1.5rem;
+}
+
+
+
+/* -----  feedback   ----- */
+#avatar-card-wrapper{
+  width: 80px;
+  height: 80px; 
+  overflow: hidden; 
+  border-radius: 50%;
+}
+
+#avatar-card-wrapper img{
+  width: 100%;
+  height: auto;
+}
+
+#flip-icon{ 
+  display: inline-block;
+  transform: rotate(180deg);
+}
+
+
+/* -----  footer   ----- */
+.app-store{
+  width: 106px;
+}
+
+.icones-redes{
+  width: 26px;
+  box-shadow: 0px 0px 12px 12px rgba(180, 174, 180, 0.075);
+}
+
+
+
+
+
+
