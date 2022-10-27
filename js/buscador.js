@@ -1,56 +1,49 @@
 let campoBuscar = document.querySelector('#buscador');
+let tr = document.querySelectorAll('.usuario');
+
 
 campoBuscar.addEventListener("input", function(){
 
   if(this.value.length > 0 ){
-    let filtro = new RegExp(`^${this.value}`, "i");
+    let input = this.value;
 
+    let inputPalavra = /(^\D)/g.test(input);
 
-    let usuariosFiltrados = usuarios.filter((usuario) => 
-      usuario.nome == filtro
-    )
-    
+    let inputNumero = /(\d)/g.test(input);
   
-    console.log(usuariosFiltrados);
-  }  
+    let usuariosFiltrados;
 
-  console.log(this.value)
-
-})
-
-  // let usuariosFiltrados = usuarios.filter((usuario) => {
-    //   if(usuario.nome.includes(filtro) || usuario.telefone.includes(filtro)){
-    //     return usuario;
-    //   }
-    // })
-
-/*
-let campoBuscar = document.querySelector('#buscador');
-
-campoBuscar.addEventListener("input", function(){
-
-  let usuarios = document.querySelectorAll(".usuario");
-
-  if(this.value.length > 0 ){
-    for(const element of usuarios){
-      let usuario = element;
-      let tdNome = usuario.querySelector(".info-nome");
-      let nome = tdNome.textContent;
-    
-
-      let exp = new RegExp(`^${this.value}`, "i")
-      if(!exp.test(nome)){
-        usuario.classList.add("d-none");
-      }else{
-        usuario.classList.remove("d-none");
+    if(inputPalavra == true){
+      usuariosFiltrados = usuarios.filter((usuario) => 
+      usuario.nome.toLowerCase().startsWith(input));
+     
+      while(tabela.hasChildNodes()){
+        tabela.removeChild(tabela.firstChild)
       }
+      
+      criarTabela(usuariosFiltrados);
+      
+    }
+    if(inputNumero == true){
+      usuariosFiltrados = usuarios.filter((usuario) => 
+      usuario.telefone.toString().includes(input));
+       
+      while(tabela.hasChildNodes()){
+        tabela.removeChild(tabela.firstChild)
+      }
+        
+        
+      criarTabela(usuariosFiltrados);
+        
     }
 
-  }else{
-    for (const element of usuarios){
-      let usuario = element;
-      usuario.classList.remove("d-none");
+  }  
+
+  else {
+    while(tabela.hasChildNodes()){
+      tabela.removeChild(tabela.firstChild)
+    }
+    criarTabela(usuarios);  
   }
-  }
+
 })
-*/

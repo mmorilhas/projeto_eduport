@@ -1,18 +1,19 @@
 let usuarios = [
-  {nome: "Marcos", telefone: 11987652345},
-  {nome: "Camila", telefone: 11987652345},
-  {nome: "Rodrigo", telefone: 11987652345},
-  {nome: "Helena", telefone: 11987652345},
-  {nome: "Mariana", telefone: 11987652345},
-  {nome: "Carolina", telefone: 11987652345}
+  {nome: "Marcos", telefone: 11479506601},
+  {nome: "Camila", telefone: 11987632354},
+  {nome: "Rodrigo", telefone: 12987652345},
+  {nome: "Helena", telefone: 21362698797},
+  {nome: "Mariana", telefone: 65803826984},
+  {nome: "Carolina", telefone: 12239850113}
 ]
 
 
 let tabela = document.querySelector("#tabela-usuarios");
 
-window.onload = function() {
+window.onload = criarTabela(usuarios);
 
-  usuarios.forEach((usuario) => {
+function criarTabela(user) {
+  user.forEach((usuario) => {
     let trow = document.createElement('tr');
     trow.classList.add('usuario');
 
@@ -30,7 +31,4 @@ window.onload = function() {
 
     tabela.appendChild(trow);
   })
-}  
-
-
-
+}
