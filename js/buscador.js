@@ -1,4 +1,30 @@
+let campoBuscar = document.querySelector('#buscador');
 
+campoBuscar.addEventListener("input", function(){
+
+  if(this.value.length > 0 ){
+    let filtro = new RegExp(`^${this.value}`, "i");
+
+
+    let usuariosFiltrados = usuarios.filter((usuario) => 
+      usuario.nome == filtro
+    )
+    
+  
+    console.log(usuariosFiltrados);
+  }  
+
+  console.log(this.value)
+
+})
+
+  // let usuariosFiltrados = usuarios.filter((usuario) => {
+    //   if(usuario.nome.includes(filtro) || usuario.telefone.includes(filtro)){
+    //     return usuario;
+    //   }
+    // })
+
+/*
 let campoBuscar = document.querySelector('#buscador');
 
 campoBuscar.addEventListener("input", function(){
@@ -27,3 +53,4 @@ campoBuscar.addEventListener("input", function(){
   }
   }
 })
+*/

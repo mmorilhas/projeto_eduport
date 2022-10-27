@@ -31,3 +31,6 @@ window.onload = function() {
     tabela.appendChild(trow);
   })
 }  
+
+
+
