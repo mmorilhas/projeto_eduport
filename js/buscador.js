@@ -3,7 +3,7 @@ let campoBuscar = document.querySelector('#buscador');
 campoBuscar.addEventListener("input", function(){
 
   if(this.value.length > 0 ){
-    let input = this.value;
+    let input = this.value.toLowerCase();
 
     let inputPalavra = /(^\D)/g.test(input);
 
