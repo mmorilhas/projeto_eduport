@@ -12,19 +12,22 @@ let tabela = document.querySelector("#tabela-usuarios");
 
 window.onload = function() {
 
-  usuarios.forEach(usuario => {
+  usuarios.forEach((usuario) => {
     let trow = document.createElement('tr');
     trow.classList.add('usuario');
-    
-    Object.values(usuario).forEach(user => {
-      let tdata = document.createElement('td');
-      let textNode = document.createTextNode(user);
-      console.log(user);
-      tdata.appendChild(textNode);
-      trow.appendChild(tdata);
-    })
-    
+
+    let tdNome = document.createElement('td');
+    tdNome.classList.add('info-nome');
+
+    let tdTelefone = document.createElement('td');
+    tdTelefone.classList.add('info-telefone');
+
+    tdNome.textContent = usuario.nome;
+    tdTelefone.textContent = usuario.telefone;
+
+    trow.appendChild(tdNome);
+    trow.appendChild(tdTelefone);
+
     tabela.appendChild(trow);
   })
-}
-
+}  

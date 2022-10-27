@@ -1,3 +1,4 @@
+
 let campoBuscar = document.querySelector('#buscador');
 
 campoBuscar.addEventListener("input", function(){
@@ -9,20 +10,20 @@ campoBuscar.addEventListener("input", function(){
       let usuario = element;
       let tdNome = usuario.querySelector(".info-nome");
       let nome = tdNome.textContent;
-      
+    
 
       let exp = new RegExp(`^${this.value}`, "i")
       if(!exp.test(nome)){
-        usuario.classList.add("invisivel");
+        usuario.classList.add("d-none");
       }else{
-        usuario.classList.remove("invisivel");
+        usuario.classList.remove("d-none");
       }
     }
 
   }else{
     for (const element of usuarios){
       let usuario = element;
-      usuario.classList.remove("invisivel");
+      usuario.classList.remove("d-none");
   }
   }
 })
