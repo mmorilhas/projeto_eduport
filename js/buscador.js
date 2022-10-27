@@ -1,6 +1,4 @@
 let campoBuscar = document.querySelector('#buscador');
-let tr = document.querySelectorAll('.usuario');
-
 
 campoBuscar.addEventListener("input", function(){
 
