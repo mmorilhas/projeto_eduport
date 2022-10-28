@@ -11,36 +11,23 @@ campoBuscar.addEventListener("input", function(){
   
     let usuariosFiltrados;
 
-    if(inputPalavra == true){
+    if(inputPalavra){
       usuariosFiltrados = usuarios.filter((usuario) => 
       usuario.nome.toLowerCase().startsWith(input));
      
-      while(tabela.hasChildNodes()){
-        tabela.removeChild(tabela.firstChild)
-      }
-      
       criarTabela(usuariosFiltrados);
       
     }
-    if(inputNumero == true){
+    if(inputNumero){
       usuariosFiltrados = usuarios.filter((usuario) => 
       usuario.telefone.toString().includes(input));
-       
-      while(tabela.hasChildNodes()){
-        tabela.removeChild(tabela.firstChild)
-      }
-        
         
       criarTabela(usuariosFiltrados);
         
     }
 
   }  
-
   else {
-    while(tabela.hasChildNodes()){
-      tabela.removeChild(tabela.firstChild)
-    }
     criarTabela(usuarios);  
   }
 

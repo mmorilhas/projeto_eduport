@@ -105,6 +105,7 @@ body{
 
 
 
+
 /* -----  placas   ----- */
 
 .placas i{
@@ -135,6 +136,11 @@ body{
 
 /* -----  badges   ----- */
 
+.tamanho-badges{
+  padding: 0.1rem 0.4rem;
+  font-size: 0.75rem;
+}
+
 .badge-roxo{
   background-color: #f0ecf9;
   color: #6f42c1;
@@ -158,7 +164,11 @@ body{
 
 
 
+
 /* -----  nav e navbar   ----- */
+.logo{
+  width: 8rem;
+}
 
 .navbar-nav, .nav {
   font-size: 0.75rem;

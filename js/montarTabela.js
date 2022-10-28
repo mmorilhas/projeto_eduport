@@ -13,6 +13,8 @@ let tabela = document.querySelector("#tabela-usuarios");
 window.onload = criarTabela(usuarios);
 
 function criarTabela(user) {
+  tabela.innerHTML= '';
+
   user.forEach((usuario) => {
     let trow = document.createElement('tr');
     trow.classList.add('usuario');
